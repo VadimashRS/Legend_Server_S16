@@ -343,7 +343,7 @@ namespace ExeOption
 	enum WingLevel3ExeOption
 	{
 		WingThirdIgnoreEnemyDefense					= 0x01, // 5%
-		WingThirdReflectTotalEnemyDamage			= 0x02, // 5% Probabilidad de devolver el daño que te hacen
+		WingThirdReflectTotalEnemyDamage			= 0x02, // 5% Probabilidad de devolver el daï¿½o que te hacen
 		WingThirdTotalyHPRecovery					= 0x04, // 5% Probabilidad de recuperar el hp al atacar
 		WingThirdTotalyManaRecovery					= 0x08, // 5% Probabilidad de recuperar el mana al atacar
 	};
@@ -565,8 +565,8 @@ enum MossItemType
 static const int32 WingSocketOptionCreateRate[MAX_WING_SOCKET_OPTION_UPGRADE_LEVEL] = { 1, 2, 3, 5, 15, 25, 40, 50, 60, 75, 90 };
 
 #define MAX_EARRING_OPTION					5
-#define MAX_EARRING_OPTION_LEVEL			8
-#define MAX_EARRING_BONUS					2
+#define MAX_EARRING_OPTION_LEVEL			9
+#define MAX_EARRING_BONUS					3
 #define MAX_EARRING_UPGRADE_MATERIAL		3
 #define MAX_EARRING_UPGRADE_SLOTS			29
 

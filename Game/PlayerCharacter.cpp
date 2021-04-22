@@ -4496,6 +4496,11 @@ void Player::ApplyEarringOption(uint8 level, uint8 group, uint8 option, uint8 va
 		{
 			   this->IncreaseIntData(UNIT_INT_CRITICAL_DAMAGE_ADD, sFormulaMgr->GetOrCreateValue(9, pEarringValue->GetValue(), level));
 		} break;
+	case 31:
+		{
+			   this->IncreaseIntData(UNIT_INT_CRITICAL_DAMAGE_ADD, sFormulaMgr->GetOrCreateValue(9, pEarringValue->GetValue(), level));
+			   this->IncreaseIntData(UNIT_INT_EXCELLENT_DAMAGE_ADD, sFormulaMgr->GetOrCreateValue(9, pEarringValue->GetValue(), level));
+		} break;
 	}
 }
 
@@ -11164,7 +11169,7 @@ bool Player::WearItem(Item const* mItem, uint8 slot)
 		}
 	}
 
-	if ( slot == RING_01 || slot == RING_02 ) // Verificar que no se puedan usar 2 rings de transformación
+	if ( slot == RING_01 || slot == RING_02 ) // Verificar que no se puedan usar 2 rings de transformaciï¿½n
 	{
 		if ( mItem->GetSlot() != RING_01 && mItem->GetSlot() != RING_02 )
 		{
