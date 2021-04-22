@@ -8,14 +8,14 @@
 
 ChaosMixHandler ChaosMixTable[] =
 {
-	{1,	"[ Chaos Weapon ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixWeapon				, false, 0 }, //1
-	{2,	"[ Devil Square ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixDevilSquare		, true, 8 }, //2
-	{3,	"[ Upgrade +10 ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixUpgrade10			, false, 0 }, //3
-	{4,	"[ Upgrade +11 ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixUpgrade11			, false, 0 }, //4
-	{5,	"[ Dinorant ]",				InterfaceData::ChaosMachine,		&MixHandler::ChaosMixDinorant			, true, 2 }, //5
-	{6,	"[ Stat Fruit ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixStatFruit			, true, 16 }, //6
-	{7,	"[ Wing Second ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixWingSecond			, false, 0 }, //7
-	{8,	"[ Blood Castle ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixBloodCastle		, true, 6 }, //8
+	{1,		"[ Chaos Weapon ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixWeapon				, false, 0 }, //1
+	{2,		"[ Devil Square ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixDevilSquare		, true, 8 }, //2
+	{3,		"[ Upgrade +10 ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixUpgrade10			, false, 0 }, //3
+	{4,		"[ Upgrade +11 ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixUpgrade11			, false, 0 }, //4
+	{5,		"[ Dinorant ]",				InterfaceData::ChaosMachine,		&MixHandler::ChaosMixDinorant			, true, 2 }, //5
+	{6,		"[ Stat Fruit ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixStatFruit			, true, 16 }, //6
+	{7,		"[ Wing Second ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixWingSecond			, false, 0 }, //7
+	{8,		"[ Blood Castle ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixBloodCastle		, true, 6 }, //8
 	{11,	"[ Wing First ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixWingFirst			, false, 0 }, //11
 	{12,	"[ Unknown_4 ]",			InterfaceData::None,				&MixHandler::ChaosMixNone				, false, 0 }, //12
 	{13,	"[ Dark Horse ]",			InterfaceData::PetTrainer,			&MixHandler::ChaosMixDarkHorse			, false, 0 }, //13
@@ -47,23 +47,23 @@ ChaosMixHandler ChaosMixTable[] =
 	{47,	"[ Sealed Box ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedBox			, true, 16 }, //47
 	{48,	"[ Summon Scroll ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSummonScroll		, false, 0 }, //48
 	{49,	"[ Upgrade +14 ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixUpgrade14			, false, 0 }, //49
-	{50,	"[ Upgrade +15 ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixUpgrade15			, false, 0 }, //50
-	{51,	"[ Lucky Ticket ]",			InterfaceData::Lucky,				&MixHandler::ChaosMixLuckyTicket		, false, 0 }, //51
-	{52,	"[ Extension Jewel ]",		InterfaceData::Lucky,				&MixHandler::ChaosMixExtensionJewel		, false, 0 }, //52
-	{54,	"[ Arka War Booty ]",		InterfaceData::ArkaWarExchange,		&MixHandler::ChaosMixArkaWarBooty		, false, 0 }, //54
-	{55,	"[ Arka War Sign ]",		InterfaceData::ArkaWarSignRegister,	&MixHandler::ChaosMixArkaWarSign		, false, 0 }, //55
-	{56,	"[ Monster Wing ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixMonsterWing		, false, 0 }, //56
-	{75,	"[ Conqueror Wings ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixConquerorWings		, false, 0 }, //75
-	{76,	"[ Dark Transformation Ring ]",	InterfaceData::ChaosMachine,		&MixHandler::ChaosMixDarkTransformationRing		, false, 0 }, //76
+	{50,	"[ Upgrade +15 ]",					InterfaceData::ChaosMachine,		&MixHandler::ChaosMixUpgrade15			, false, 0 }, //50
+	{51,	"[ Lucky Ticket ]",					InterfaceData::Lucky,				&MixHandler::ChaosMixLuckyTicket		, false, 0 }, //51
+	{52,	"[ Extension Jewel ]",				InterfaceData::Lucky,				&MixHandler::ChaosMixExtensionJewel		, false, 0 }, //52
+	{54,	"[ Arka War Booty ]",				InterfaceData::ArkaWarExchange,		&MixHandler::ChaosMixArkaWarBooty		, false, 0 }, //54
+	{55,	"[ Arka War Sign ]",				InterfaceData::ArkaWarSignRegister,	&MixHandler::ChaosMixArkaWarSign		, false, 0 }, //55
+	{56,	"[ Monster Wing ]",					InterfaceData::ChaosMachine,		&MixHandler::ChaosMixMonsterWing		, false, 0 }, //56
+	{75,	"[ Conqueror Wings ]",				InterfaceData::ChaosMachine,		&MixHandler::ChaosMixConquerorWings		, false, 0 }, //75
+	{76,	"[ Dark Transformation Ring ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixDarkTransformationRing		, false, 0 }, //76
 	{77,	"[ Ancient Hero Soul ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixAncientHeroSoul		, false, 0 }, //77
 	{78,	"[ Sealed Armor Fury ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //78
 	{79,	"[ Sealed Helm Fury ]",				InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //79
 	{80,	"[ Sealed Pants Fury ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //80
 	{81,	"[ Sealed Boots Fury ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //81
-	{ 82, "[ Sealed Rune Wizard ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //82
-	{ 83, "[ Sealed Rune Wizard ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //83
-	{ 84, "[ Sealed Rune Wizard ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //84
-	{ 85, "[ Sealed Rune Wizard ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //85
+	{82, 	"[ Sealed Rune Wizard ]", 			InterfaceData::ChaosMachine, 		&MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //82
+	{83, 	"[ Sealed Rune Wizard ]", 			InterfaceData::ChaosMachine, 		&MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //83
+	{84, 	"[ Sealed Rune Wizard ]", 			InterfaceData::ChaosMachine, 		&MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //84
+	{85, 	"[ Sealed Rune Wizard ]", 			InterfaceData::ChaosMachine, 		&MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //85
 	{86,	"[ Sealed Armor Trascendence ]",	InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //86
 	{87,	"[ Sealed Helm Trascendence ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //87
 	{88,	"[ Sealed Pants Trascendence ]",	InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //88
@@ -80,10 +80,10 @@ ChaosMixHandler ChaosMixTable[] =
 	{107,	"[ Sealed Helm Conquest ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //107
 	{108,	"[ Sealed Pants Conquest ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //108
 	{109,	"[ Sealed Gloves Conquest ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //109
-	{ 110, "[ Sealed Slayer ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //110
-	{ 111, "[ Sealed Slayer ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //111
-	{ 112, "[ Sealed Slayer ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //112
-	{ 113, "[ Sealed Slayer ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //113
+	{110, 	"[ Sealed Slayer ]", 				InterfaceData::ChaosMachine, 		&MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //110
+	{111, 	"[ Sealed Slayer ]", 				InterfaceData::ChaosMachine, 		&MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //111
+	{112, 	"[ Sealed Slayer ]", 				InterfaceData::ChaosMachine, 		&MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //112
+	{113, 	"[ Sealed Slayer ]", 				InterfaceData::ChaosMachine, 		&MixHandler::ChaosMixSealedMasteryFinal, false, 0 }, //113
 	{114,	"[ Sealed Armor Honor ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //114
 	{115,	"[ Sealed Helm Honor ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //115
 	{116,	"[ Sealed Pants Honor ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, //116
@@ -162,14 +162,14 @@ ChaosMixHandler ChaosMixTable[] =
 	{197,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 }, //197
 	{198,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 }, //198
 	{199,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 }, //199
-	{200,	"[ Upgrade Bloodangel to Darkangel Weapon ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //200
-	{201,	"[ Upgrade DarkAngel Weapon Magic Sword ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //201
-	{202,	"[ Upgrade DarkAngel Weapon Claw ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //202
-	{203,	"[ Upgrade DarkAngel Weapon Scepter ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //203
-	{204,	"[ Upgrade DarkAngel Weapon Lance ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //204
-	{205,	"[ Upgrade DarkAngel Weapon Bow ]",			InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //205
-	{206,	"[ Upgrade DarkAngel Weapon Staff ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //206
-	{207,	"[ Upgrade DarkAngel Weapon Stick ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //207
+	{200,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //200
+	{201,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //201
+	{202,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //202
+	{203,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //203
+	{204,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //204
+	{205,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //205
+	{206,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //206
+	{207,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //207
 	{208,	"[ Sealed BloodAngel Hero ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixSealedBloodangelHero , false, 0 }, //208
 	{209,	"[ Sealed BloodAngel Hero ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixSealedBloodangelHero , false, 0 }, //209
 	{210,	"[ Sealed BloodAngel Hero ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixSealedBloodangelHero , false, 0 }, //210
@@ -226,14 +226,14 @@ ChaosMixHandler ChaosMixTable[] =
 	{261,	"[ Upgrade Bloodangel Pants Magical ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixBloodangelToDarkangelSet , false, 0 },
 	{262,	"[ Upgrade Bloodangel Gloves Magical ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixBloodangelToDarkangelSet , false, 0 },
 	{263,	"[ Upgrade Bloodangel Boots Magical ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixBloodangelToDarkangelSet , false, 0 },
-	{264,	"[ Upgrade DarkAngel Armor Revival ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
-	{265,	"[ Upgrade DarkAngel Helm Revival ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
-	{266,	"[ Upgrade DarkAngel Pants Revival ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
-	{267,	"[ Upgrade DarkAngel Gloves Revival ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
-	{268,	"[ Upgrade DarkAngel Armor Fall ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
-	{269,	"[ Upgrade DarkAngel Pants Fall ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
-	{270,	"[ Upgrade DarkAngel Gloves Fall ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
-	{271,	"[ Upgrade DarkAngel Boots Fall ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
+	{264,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
+	{265,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
+	{266,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
+	{267,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
+	{268,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
+	{269,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
+	{270,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
+	{271,	"[ Upgrade Darkangel to Holyangel Set ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet , false, 0 },
 	{272,	"[ Attack To Support Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionAttackToSupport , false, 0 }, // Attack -> Support
 	{273,	"[ Attack To Support Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionAttackToSupport , false, 0 }, // Attack -> Support
 	{274,	"[ Attack To Support Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionAttackToSupport , false, 0 }, // Attack -> Support
@@ -246,18 +246,18 @@ ChaosMixHandler ChaosMixTable[] =
 	{281,	"[ Attack To Support Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionAttackToSupport , false, 0 }, // Attack -> Support
 	{282,	"[ Attack To Support Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionAttackToSupport , false, 0 }, // Attack -> Support
 	{283,	"[ Attack To Support Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionAttackToSupport , false, 0 }, // Attack -> Support
-	{284,	"[ Attack To Magic Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{285,	"[ Attack To Magic Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{286,	"[ Attack To Magic Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{287,	"[ Attack To Magic Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{288,	"[ Attack To Magic Conversion (DA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{289,	"[ Attack To Magic Conversion (DA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{290,	"[ Attack To Magic Conversion (DA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{291,	"[ Attack To Magic Conversion (DA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{292,	"[ Attack To Magic Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{293,	"[ Attack To Magic Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{294,	"[ Attack To Magic Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
-	{295,	"[ Attack To Magic Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{284,	"[ Attack To Magic Conversion (BA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{285,	"[ Attack To Magic Conversion (BA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{286,	"[ Attack To Magic Conversion (BA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{287,	"[ Attack To Magic Conversion (BA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{288,	"[ Attack To Magic Conversion (DA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{289,	"[ Attack To Magic Conversion (DA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{290,	"[ Attack To Magic Conversion (DA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{291,	"[ Attack To Magic Conversion (DA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{292,	"[ Attack To Magic Conversion (HA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{293,	"[ Attack To Magic Conversion (HA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{294,	"[ Attack To Magic Conversion (HA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
+	{295,	"[ Attack To Magic Conversion (HA) ]",		InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionAttackToMagic , false, 0 }, // Attack -> Magic
 	{296,	"[ Support to Attack Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionSupportToAttack , false, 0 }, // Support -> Attack
 	{297,	"[ Support to Attack Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionSupportToAttack , false, 0 }, // Support -> Attack
 	{298,	"[ Support to Attack Conversion (BA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixElfConversionSupportToAttack , false, 0 }, // Support -> Attack
@@ -282,7 +282,7 @@ ChaosMixHandler ChaosMixTable[] =
 	{317,	"[ Magic to Attack Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionMagicToAttack , false, 0 }, // Magic -> Attack
 	{318,	"[ Magic to Attack Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionMagicToAttack , false, 0 }, // Magic -> Attack
 	{319,	"[ Magic to Attack Conversion (HA) ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixMGConversionMagicToAttack , false, 0 }, // Magic -> Attack
-	{320,	"[ Upgrade DarkAngel Weapon Quiver ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //320
+	{320,	"[ Upgrade Bloodangel to Darkangel Weapon ]",	InterfaceData::ChaosMachine,	&MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon , false, 0 }, //320
 	{ 321, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 }, //321
 	{ 322, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 }, //321
 	{ 323, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 }, //321
@@ -400,7 +400,7 @@ ChaosMixHandler ChaosMixTable[] =
 	{ 435, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 }, //435
 	{ 436, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 }, //436
 	{ 437, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 }, //437
-	{ 438, "[ Upgrade DarkAngel Weapon Mace ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon, false, 0 }, //438
+	{ 438, "[ Upgrade Bloodangel to Darkangel Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon, false, 0 }, //438
 	{ 439, "[ Upgrade Darkangel to Holyangel Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelWeapon, false, 0 }, //439
 	{ 440, "[ Upgrade Holyangel To Soul Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToSoulWeapon, false, 0 }, //440
 	{ 441, "[ Upgrade Darkangel To Holyangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet, false, 0 }, //441
@@ -505,6 +505,10 @@ ChaosMixHandler ChaosMixTable[] =
 	{ 537, "[ Upgrade Earring Rage To Ancestors ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringRageToAncestors, false, 0 }, //537 -> Left +11
 	{ 538, "[ Upgrade Earring Rage To Ancestors ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringRageToAncestors, false, 0 }, //538 -> Right +11
 
+	{ 543,	"[ Sealed Armor Hertless ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 544,	"[ Sealed Helm Hertless ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 545,	"[ Sealed Pants Hertless ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 546,	"[ Sealed Gloves Hertless ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
 	{ 547, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 }, //547
 	{ 548, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 }, //548
 	{ 549, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 }, //549
@@ -526,11 +530,11 @@ ChaosMixHandler ChaosMixTable[] =
 	{ 565, "[ Upgrade Awakening to Blue Eye Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeAwakeningToBlueEyeSet, false, 0 }, //565
 
 	{ 601, "[ Seal Armor Piece ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealArmorPiece, false, 0 }, //601
-	{ 602, "[ Scratched Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //602
-	{ 603, "[ Scratched Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //603
-	{ 604, "[ Scratched Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //604
-	{ 605, "[ Scratched Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //605
-	{ 606, "[ Scratched Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //606
+	{ 602, "[ Scratched Sealed Bloodangel ]", 	InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //602
+	{ 603, "[ Scratched Sealed Bloodangel ]", 	InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //603
+	{ 604, "[ Scratched Sealed Bloodangel ]", 	InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //604
+	{ 605, "[ Scratched Sealed Bloodangel ]", 	InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //605
+	{ 606, "[ Scratched Sealed Bloodangel ]", 	InterfaceData::ChaosMachine, &MixHandler::ChaosMixScratchedSealedBloodangel, false, 0 }, //606
 
 
 	{ 566, "[ Upgrade Blue Eye to Silver Heart Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHeartSet, false, 0 }, //
@@ -620,6 +624,10 @@ ChaosMixHandler ChaosMixTable[] =
 	{ 1049, "[ Upgrade Earring Ancestors To Honor ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringAncestorsToHonor, false, 0 },
 	{ 1050, "[ Upgrade Earring Ancestors To Honor ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringAncestorsToHonor, false, 0 },
 
+	{ 1055,	"[ Sealed Armor (Conviction) ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 1056,	"[ Sealed Helm (Conviction) ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 1057,	"[ Sealed Pants (Conviction) ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 1058,	"[ Sealed Gloves (Conviction) ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
 	{ 1059, "[ Upgrade Bloodangel To Darkangel Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon, false, 0 },
 	{ 1060, "[ Upgrade Darkangel To Holyangel Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelWeapon, false, 0 },
 	{ 1061, "[ Upgrade Holyangel To Soul Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToSoulWeapon, false, 0 },
@@ -632,10 +640,10 @@ ChaosMixHandler ChaosMixTable[] =
 	{ 1068, "[ Upgrade Darkangel To Holyangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet, false, 0 },
 	{ 1069, "[ Upgrade Darkangel To Holyangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet, false, 0 },
 	{ 1070, "[ Upgrade Darkangel To Holyangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet, false, 0 },
-	{ 1071, "[ Upgrade Holyangel To Soul Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
-	{ 1072, "[ Upgrade Holyangel To Soul Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
-	{ 1073, "[ Upgrade Holyangel To Soul Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
-	{ 1074, "[ Upgrade Holyangel To Soul Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
+	{ 1071, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
+	{ 1072, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
+	{ 1073, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
+	{ 1074, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
 	{ 1075, "[ Upgrade Soul To Blue Eye Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeAwakeningToBlueEyeSet, false, 0 },
 	{ 1076, "[ Upgrade Soul To Blue Eye Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeAwakeningToBlueEyeSet, false, 0 },
 	{ 1077, "[ Upgrade Soul To Blue Eye Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeAwakeningToBlueEyeSet, false, 0 },
@@ -697,10 +705,148 @@ ChaosMixHandler ChaosMixTable[] =
 	{ 1133, "[ S To E Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionStrengthToEnergy, false, 0 },
 	{ 1134, "[ S To E Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionStrengthToEnergy, false, 0 },
 
+	{ 1139,	"[ Sealed Armor Ritual(GC) ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 1140,	"[ Sealed Helm Ritual(GC) ]",			InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 1141,	"[ Sealed Pants Ritual(GC) ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 1142,	"[ Sealed Gloves Ritual(GC) ]",		InterfaceData::ChaosMachine,		&MixHandler::ChaosMixSealedMasteryFinal	, false, 0 }, 
+	{ 1143, "[ Upgrade Bloodangel To Darkangel Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon, false, 0 },
+	{ 1144, "[ Upgrade Darkangel To Holyangel Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelWeapon, false, 0 },
+	{ 1145, "[ Upgrade Holyangel To Soul Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToSoulWeapon, false, 0 },
+	{ 1146, "[ Upgrade Soul To Blue Eye Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSoulToBlueEyeWeapon, false, 0 },
+	{ 1147, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 },
+	{ 1148, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 },
+	{ 1149, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 },
+	{ 1150, "[ Upgrade Bloodangel To Darkangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixBloodangelToDarkangelSet, false, 0 },
+	{ 1151, "[ Upgrade Darkangel To Holyangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet, false, 0 },
+	{ 1152, "[ Upgrade Darkangel To Holyangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet, false, 0 },
+	{ 1153, "[ Upgrade Darkangel To Holyangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet, false, 0 },
+	{ 1154, "[ Upgrade Darkangel To Holyangel Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelSet, false, 0 },
+	{ 1155, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
+	{ 1156, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
+	{ 1157, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
+	{ 1158, "[ Upgrade Holyangel to Awakening Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToAwakeningSet, false, 0 },
+	{ 1159, "[ Upgrade Soul To Blue Eye Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeAwakeningToBlueEyeSet, false, 0 },
+	{ 1160, "[ Upgrade Soul To Blue Eye Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeAwakeningToBlueEyeSet, false, 0 },
+	{ 1161, "[ Upgrade Soul To Blue Eye Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeAwakeningToBlueEyeSet, false, 0 },
+	{ 1162, "[ Upgrade Soul To Blue Eye Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeAwakeningToBlueEyeSet, false, 0 },
+	{ 1163, "[ Upgrade Blue Eye To Silver Heart Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHeartSet, false, 0 },
+	{ 1164, "[ Upgrade Blue Eye To Silver Heart Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHeartSet, false, 0 },
+	{ 1165, "[ Upgrade Blue Eye To Silver Heart Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHeartSet, false, 0 },
+	{ 1166, "[ Upgrade Blue Eye To Silver Heart Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHeartSet, false, 0 },
 	{ 1167, "[ Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 },
 	{ 1168, "[ Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 },
 	{ 1169, "[ Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 },
 	{ 1170, "[ Sealed Bloodangel ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixSealedMasteryFinal, false, 0 },
+
+	{ 1171, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1172, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1173, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1174, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1175, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1176, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1177, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1178, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1179, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1180, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1181, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1182, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1183, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1184, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1185, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1186, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1187, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1188, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1189, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1190, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1191, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1192, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1193, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1194, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1195, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1196, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1197, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1198, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1199, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1200, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1201, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1202, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1203, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1204, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1205, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1206, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1207, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1208, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1209, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1210, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1211, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1212, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1213, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1214, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1215, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1216, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1217, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1218, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1219, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1220, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1221, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1222, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1223, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1224, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1225, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1226, "[ Upgrade Silver Heart To Manticore Set ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSilverHearToManticoretSet, false, 0 },
+	{ 1227, "[ Attack To Support Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixElfConversionAttackToSupport, false, 0 },
+	{ 1228, "[ Attack To Support Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixElfConversionAttackToSupport, false, 0 },
+	{ 1229, "[ Attack To Support Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixElfConversionAttackToSupport, false, 0 },
+	{ 1230, "[ Attack To Support Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixElfConversionAttackToSupport, false, 0 },
+	{ 1231, "[ Support To Attack Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixElfConversionSupportToAttack, false, 0 },
+	{ 1232, "[ Support To Attack Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixElfConversionSupportToAttack, false, 0 },
+	{ 1233, "[ Support To Attack Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixElfConversionSupportToAttack, false, 0 },
+	{ 1234, "[ Support To Attack Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixElfConversionSupportToAttack, false, 0 },
+	{ 1235, "[ Attack To Magic Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixMGConversionAttackToMagic, false, 0 },
+	{ 1236, "[ Attack To Magic Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixMGConversionAttackToMagic, false, 0 },
+	{ 1237, "[ Attack To Magic Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixMGConversionAttackToMagic, false, 0 },
+	{ 1238, "[ Attack To Magic Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixMGConversionAttackToMagic, false, 0 },
+	{ 1239, "[ Magic To Attack Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixMGConversionMagicToAttack, false, 0 },
+	{ 1240, "[ Magic To Attack Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixMGConversionMagicToAttack, false, 0 },
+	{ 1241, "[ Magic To Attack Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixMGConversionMagicToAttack, false, 0 },
+	{ 1242, "[ Magic To Attack Conversion (Manti) ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixMGConversionMagicToAttack, false, 0 },
+	{ 1243, "[ E To S Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionEnergyToStrength, false, 0 },
+	{ 1244, "[ E To S Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionEnergyToStrength, false, 0 },
+	{ 1245, "[ E To S Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionEnergyToStrength, false, 0 },
+	{ 1246, "[ E To S Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionEnergyToStrength, false, 0 },
+	{ 1247, "[ S To E Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionStrengthToEnergy, false, 0 },
+	{ 1248, "[ S To E Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionStrengthToEnergy, false, 0 },
+	{ 1249, "[ S To E Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionStrengthToEnergy, false, 0 },
+	{ 1250, "[ S To E Conversion Knight ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixKnightConversionStrengthToEnergy, false, 0 },
+	{ 1251, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1252, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1253, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1254, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1255, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1256, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1257, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1258, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1259, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1260, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1261, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1262, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1263, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+	{ 1264, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
+
+/*
+Season 16 2-1
+*/
+	{ 1441, "[ Upgrade Earring Honor To Blood +15 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1442, "[ Upgrade Earring Honor To Blood +15 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1443, "[ Upgrade Earring Honor To Blood +14 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1444, "[ Upgrade Earring Honor To Blood +14 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1445, "[ Upgrade Earring Honor To Blood +13 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1446, "[ Upgrade Earring Honor To Blood +13 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1447, "[ Upgrade Earring Honor To Blood +12 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1448, "[ Upgrade Earring Honor To Blood +12 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1449, "[ Upgrade Earring Honor To Blood +11 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+	{ 1450, "[ Upgrade Earring Honor To Blood +11 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+
 
 	{0xFFFF,	"[ NULL ]",	InterfaceData::None,	&MixHandler::ChaosMixNone , false, 0 },
 };
@@ -3476,6 +3622,7 @@ void MixHandler::ChaosMixWingThird(uint8 data)
 		m_RandomValue.AddValue(ITEMGET(12, 270), 0);
 		m_RandomValue.AddValue(ITEMGET(12, 467), 0);
 		m_RandomValue.AddValue(ITEMGET(12, 472), 0);
+		m_RandomValue.AddValue(ITEMGET(12, 489), 0);
 
 		sItemMgr->ItemSerialCreateItem(this->GetPlayer(), serial_create_chaos_box, Item(m_RandomValue.GetRandomValue(RANDOM_POOL_RANDOM), 0, 0, 0, luck, option, exe), 1);
 		this->ChaosMixLogSuccess();
@@ -4971,10 +5118,6 @@ void MixHandler::ChaosMixBloodangelToDarkangelSet(uint8 data)
 				{
 					BloodAngelItem = ITEMGET(item->GetItemType(), 123);
 				}
-				else if (item->GetItemIndex() == 122)
-				{
-					BloodAngelItem = ITEMGET(item->GetItemType(), 123);
-				}
 				else if (item->GetItemIndex() == 180)
 				{
 					BloodAngelItem = ITEMGET(item->GetItemType(), 181);
@@ -5669,6 +5812,168 @@ void MixHandler::ChaosMixUpgradeBlueEyeToSilverHeartSet(uint8 data)
 	this->ChaosMixDBSave();
 }
 
+/*
+SiverHerat to Manticore
+*/
+void MixHandler::ChaosMixUpgradeSilverHearToManticoretSet(uint8 data)
+{
+	int32 ManticoreSoul = 0;
+	int32 DarkAngelItem = 0;
+	int32 ChaosJewel = 0;
+	int32 CreationJewel = 0;
+	int32 BundleBless = 0;
+	int32 BundleSoul = 0;
+	uint8 Luck = 0;
+	uint8 Ancient = 0;
+	uint8 Excellent = 0;
+	INIT_SOCKET_DATA(Socket);
+	uint8 SocketBonus = 0xFF;
+
+	chaos_box_loop(i)
+	{
+		Item const* item = this->GetPlayer()->GetMixInventory()->GetItem(i);
+
+		if (!item->IsItem())
+		{
+			continue;
+		}
+
+		if (item->GetItem() == ITEMGET(14, 501))
+		{
+			ManticoreSoul++;
+			this->AddDBFlag(item->GetDBFlag());
+		}
+		else if (item->GetItem() == JEWEL::CHAOS)
+		{
+			ChaosJewel += item->GetDurability();
+		}
+		else if (item->GetItem() == JEWEL::CREATION)
+		{
+			CreationJewel += item->GetDurability();
+		}
+		else if (item->GetItem() == JEWEL::BLESS)
+		{
+			BundleBless += item->GetDurability();
+		}
+		else if (item->GetItem() == JEWEL::SOUL)
+		{
+			BundleSoul += item->GetDurability();
+		}
+		else if (item->IsAncient() && item->GetLevel() >= 11 && item->GetOption() >= 4)
+		{
+			if (item->GetItemType() == 7 ||
+				item->GetItemType() == 8 ||
+				item->GetItemType() == 9 ||
+				item->GetItemType() == 10 ||
+				item->GetItemType() == 11)
+			{
+				if (item->GetItemIndex() == 189)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 221);
+				}
+				else if (item->GetItemIndex() == 190)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 222);
+				}
+				else if (item->GetItemIndex() == 191)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 223);
+				}
+				else if (item->GetItemIndex() == 192)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 224);
+				}
+				else if (item->GetItemIndex() == 193)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 225);
+				}
+				else if (item->GetItemIndex() == 194)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 226);
+				}
+				else if (item->GetItemIndex() == 195)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 227);
+				}
+				else if (item->GetItemIndex() == 196)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 228);
+				}
+				else if (item->GetItemIndex() == 197)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 229);
+				}
+				else if (item->GetItemIndex() == 198)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 230);
+				}
+				else if (item->GetItemIndex() == 199)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 231);
+				}
+				else if (item->GetItemIndex() == 185)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 232);
+				}
+				else if (item->GetItemIndex() == 205)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 233);
+				}
+				else if (item->GetItemIndex() == 217)
+				{
+					DarkAngelItem = ITEMGET(item->GetItemType(), 234);
+				}
+			}
+
+			Luck = item->GetLuck();
+			Ancient = item->GetAncient();
+			Excellent = item->GetExe();
+
+			SOCKET_SLOT_LOOP(j)
+			{
+				Socket[j] = item->GetSocket(j);
+			}
+
+			SocketBonus = item->GetSocketBonus();
+
+			this->AddDBFlag(item->GetDBFlag());
+		}
+	}
+
+	if (ManticoreSoul != 1 || DarkAngelItem == 0 || ChaosJewel != 1 || CreationJewel != 1 || BundleBless < 30 || BundleSoul < 30)
+	{
+		this->ChaosMixLogInvalidMixItems();
+		return;
+	}
+
+	this->success_rate.set(100);
+	this->mix_price = 0;
+
+	if (!this->tributeTaxPrice())
+	{
+		return;
+	}
+
+	this->ChaosMixDebugMessage();
+
+	if (this->roll_success())
+	{
+		Item item_create(DarkAngelItem, 0, 0, 0, Luck, 0, Excellent, Ancient, Socket, SocketBonus);
+		item_create.SetDBFlag(this->GetDBFlag());
+
+		sItemMgr->ItemSerialCreateItem(this->GetPlayer(), serial_create_chaos_box, item_create, 1);
+
+		this->ChaosMixLogSuccess();
+	}
+	else
+	{
+		this->ChaosMixFailInit(CHAOS_MIX_RESULT_FAIL);
+	}
+
+	this->ChaosMixDBSave();
+}
+
+
 void MixHandler::ChaosMixArchangelsHammer(uint8 data)
 {
 	int32 SteelOfHeaven = 0;
@@ -5793,39 +6098,43 @@ void MixHandler::ChaosMixUpgradeDivineArchangelWeapon(uint8 data)
 
 			if( item->GetItem() == ITEMGET(0, 19) )
 			{
-				DivineArchangelWeapon = ITEMGET(0, 51);
+				DivineArchangelWeapon = ITEMGET(0, 51);  //Blessed Archangel Sword
 			}
 			else if (item->GetItem() == ITEMGET(0, 60))
 			{
-				DivineArchangelWeapon = ITEMGET(0, 61);
-			}
-			else if( item->GetItem() == ITEMGET(2, 13) )
-			{
-				DivineArchangelWeapon = ITEMGET(2, 25);
-			}
-			else if (item->GetItem() == ITEMGET(2, 34))
-			{
-				DivineArchangelWeapon = ITEMGET(2, 35);
-			}
-			else if (item->GetItem() == ITEMGET(3, 26))
-			{
-				DivineArchangelWeapon = ITEMGET(3, 27);
-			}
-			else if( item->GetItem() == ITEMGET(4, 18) )
-			{
-				DivineArchangelWeapon = ITEMGET(4, 30);
-			}
-			else if( item->GetItem() == ITEMGET(5, 10) )
-			{
-				DivineArchangelWeapon = ITEMGET(5, 49);
-			}
-			else if( item->GetItem() == ITEMGET(5, 36) )
-			{
-				DivineArchangelWeapon = ITEMGET(5, 50);
+				DivineArchangelWeapon = ITEMGET(0, 61);  //Blessed Archangel Claw
 			}
 			else if (item->GetItem() == ITEMGET(0, 76))
 			{
-				DivineArchangelWeapon = ITEMGET(0, 77);
+				DivineArchangelWeapon = ITEMGET(0, 77);  //Blessed Archangel Short Sword
+			}
+			else if( item->GetItem() == ITEMGET(2, 13))
+			{
+				DivineArchangelWeapon = ITEMGET(2, 25);	 //Blessed Archangel Sceplet
+			}
+			else if (item->GetItem() == ITEMGET(2, 34))
+			{
+				DivineArchangelWeapon = ITEMGET(2, 35);  //Blessed Archangel Mace
+			}
+			else if (item->GetItem() == ITEMGET(3, 26))
+			{
+				DivineArchangelWeapon = ITEMGET(3, 27);  //Blessed Archangel Lance
+			}
+			else if( item->GetItem() == ITEMGET(4, 18) )
+			{
+				DivineArchangelWeapon = ITEMGET(4, 30);  //Blessed Archangel Crossbow
+			}
+			else if( item->GetItem() == ITEMGET(4, 46) )
+			{
+				DivineArchangelWeapon = ITEMGET(4, 47);  //Blessed Archangel Gun
+			}
+			else if( item->GetItem() == ITEMGET(5, 10) )
+			{
+				DivineArchangelWeapon = ITEMGET(5, 49);  //Blessed Archangel Staff
+			}
+			else if( item->GetItem() == ITEMGET(5, 36) )
+			{
+				DivineArchangelWeapon = ITEMGET(5, 50);  //Blessed Archangel Stick
 			}
 		}
 	}
@@ -5977,6 +6286,10 @@ void MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon(uint8 data)
 			{
 				Weapon = ITEMGET(0, 56);
 			}
+			else if (item->GetItem() == ITEMGET(0, 71))
+			{
+				Weapon = ITEMGET(0, 72);
+			}
 			else if( item->GetItem() == ITEMGET(2, 22) )
 			{
 				Weapon = ITEMGET(2, 26);
@@ -5993,6 +6306,14 @@ void MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon(uint8 data)
 			{
 				Weapon = ITEMGET(4, 31);
 			}
+			else if( item->GetItem() == ITEMGET(4, 34) )
+			{
+				Weapon = ITEMGET(4, 35);
+			}
+			else if( item->GetItem() == ITEMGET(4, 48) )
+			{
+				Weapon = ITEMGET(4, 49);
+			}
 			else if( item->GetItem() == ITEMGET(5, 41) )
 			{
 				Weapon = ITEMGET(5, 51);
@@ -6001,17 +6322,9 @@ void MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon(uint8 data)
 			{
 				Weapon = ITEMGET(5, 52);
 			}
-			else if( item->GetItem() == ITEMGET(4, 34) )
-			{
-				Weapon = ITEMGET(4, 35);
-			}
 			else if (item->GetItem() == ITEMGET(5, 57))
 			{
 				Weapon = ITEMGET(5, 58);
-			}
-			else if (item->GetItem() == ITEMGET(0, 71))
-			{
-				Weapon = ITEMGET(0, 72);
 			}
 			else if (item->GetItem() == ITEMGET(6, 44))
 			{
@@ -6142,6 +6455,10 @@ void MixHandler::ChaosMixUpgradeDarkangelToHolyangelWeapon(uint8 data)
 			else if (item->GetItem() == ITEMGET(4, 31))
 			{
 				Weapon = ITEMGET(4, 36);
+			}
+			else if (item->GetItem() == ITEMGET(4, 49))
+			{
+				Weapon = ITEMGET(4, 50);
 			}
 			else if (item->GetItem() == ITEMGET(5, 51))
 			{
@@ -6292,6 +6609,10 @@ void MixHandler::ChaosMixUpgradeHolyangelToSoulWeapon(uint8 data)
 			else if (item->GetItem() == ITEMGET(4, 36))
 			{
 				Weapon = ITEMGET(4, 38);
+			}
+			else if (item->GetItem() == ITEMGET(4, 50))
+			{
+				Weapon = ITEMGET(4, 51);
 			}
 			else if (item->GetItem() == ITEMGET(5, 53))
 			{
@@ -6447,6 +6768,10 @@ void MixHandler::ChaosMixUpgradeSoulToBlueEyeWeapon(uint8 data)
 			{
 				Weapon = ITEMGET(4, 41);
 			}
+			else if (item->GetItem() == ITEMGET(4, 51))
+			{
+				Weapon = ITEMGET(4, 52);
+			}
 			else if (item->GetItem() == ITEMGET(5, 55))
 			{
 				Weapon = ITEMGET(5, 61);
@@ -6505,6 +6830,163 @@ void MixHandler::ChaosMixUpgradeSoulToBlueEyeWeapon(uint8 data)
 
 	this->ChaosMixDBSave();
 }
+/*
+Blue Eye TO Silverheart Weapon
+*/
+void MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon(uint8 data)
+{
+	int32 SHAnvil = 0;
+	int32 Weapon = 0;
+	int32 ChaosJewel = 0;
+	int32 CreationJewel = 0;
+	int32 BundleBless = 0;
+	int32 BundleSoul = 0;
+	uint8 Luck = 0;
+	uint8 Excellent = 0;
+	uint8 Skill = 0;
+	INIT_SOCKET_DATA(Socket);
+	uint8 SocketBonus = 0xFF;
+
+	chaos_box_loop(i)
+	{
+		Item const* item = this->GetPlayer()->GetMixInventory()->GetItem(i);
+
+		if (!item->IsItem())
+		{
+			continue;
+		}
+
+		if (item->GetItem() == ITEMGET(14, 502))
+		{
+			SHAnvil++;
+			this->AddDBFlag(item->GetDBFlag());
+		}
+		else if (item->GetItem() == JEWEL::CHAOS)
+		{
+			ChaosJewel += item->GetDurability();
+		}
+		else if (item->GetItem() == JEWEL::CREATION)
+		{
+			CreationJewel += item->GetDurability();
+		}
+		else if (item->GetItem() == JEWEL::BLESS)
+		{
+			BundleBless += item->GetDurability();
+		}
+		else if (item->GetItem() == JEWEL::SOUL)
+		{
+			BundleSoul += item->GetDurability();
+		}
+		else if (item->GetLevel() >= 11 && item->GetOption() >= 4)
+		{
+			Luck = item->GetLuck();
+			Excellent = item->GetExe();
+			Skill = item->GetSkill();
+
+			SOCKET_SLOT_LOOP(j)
+			{
+				Socket[j] = item->GetSocket(j);
+			}
+
+			SocketBonus = item->GetSocketBonus();
+
+			this->AddDBFlag(item->GetDBFlag());
+
+			if (item->GetItem() == ITEMGET(0, 78))
+			{
+				Weapon = ITEMGET(0, 81);
+			}
+			else if (item->GetItem() == ITEMGET(0, 79))
+			{
+				Weapon = ITEMGET(0, 82);
+			}
+			else if (item->GetItem() == ITEMGET(0, 80))
+			{
+				Weapon = ITEMGET(0, 83);
+			}
+			else if (item->GetItem() == ITEMGET(0, 75))
+			{
+				Weapon = ITEMGET(0, 84);
+			}
+			else if (item->GetItem() == ITEMGET(2, 40))
+			{
+				Weapon = ITEMGET(2, 42);
+			}
+			else if (item->GetItem() == ITEMGET(2, 41))
+			{
+				Weapon = ITEMGET(2, 43);
+			}
+			else if (item->GetItem() == ITEMGET(3, 29))
+			{
+				Weapon = ITEMGET(3, 30);
+			}
+			else if (item->GetItem() == ITEMGET(4, 40))
+			{
+				Weapon = ITEMGET(4, 56);
+			}
+			else if (item->GetItem() == ITEMGET(4, 41))
+			{
+				Weapon = ITEMGET(4, 57);
+			}
+			else if (item->GetItem() == ITEMGET(4, 52))
+			{
+				Weapon = ITEMGET(4, 53);
+			}
+			else if (item->GetItem() == ITEMGET(5, 61))
+			{
+				Weapon = ITEMGET(5, 64);
+			}
+			else if (item->GetItem() == ITEMGET(5, 62))
+			{
+				Weapon = ITEMGET(5, 65);
+			}
+			else if (item->GetItem() == ITEMGET(5, 63))
+			{
+				Weapon = ITEMGET(5, 66);
+			}
+			else if (item->GetItem() == ITEMGET(6, 48))
+			{
+				Weapon = ITEMGET(6, 49);
+			}
+		}
+	}
+
+	if (SHAnvil != 1 || Weapon == 0 || ChaosJewel != 1 || CreationJewel != 1 || BundleBless < 30 || BundleSoul < 30)
+	{
+		this->ChaosMixLogInvalidMixItems();
+		return;
+	}
+
+	this->success_rate.set(100);
+	this->mix_price = 0;
+
+	if (!this->tributeTaxPrice())
+	{
+		return;
+	}
+
+	this->ChaosMixDebugMessage();
+
+	if (this->roll_success())
+	{
+		Item item_create(Weapon, 0, 0, Skill, Luck, 0, Excellent, 0, Socket, SocketBonus);
+		item_create.SetDBFlag(this->GetDBFlag());
+
+		sItemMgr->ItemSerialCreateItem(this->GetPlayer(), serial_create_chaos_box, item_create, 1);
+
+		this->ChaosMixLogSuccess();
+	}
+	else
+	{
+		this->GetPlayer()->GetInterfaceState()->SetState(0);
+		this->GetPlayer()->ChaosMixSend(0);
+		this->GetPlayer()->ChaosMixResult(CHAOS_MIX_RESULT_FAIL);
+		this->ChaosMixLogFail();
+	}
+
+	this->ChaosMixDBSave();
+}
+
 
 void MixHandler::ChaosMixSealedBloodangelHero(uint8 data)
 {
@@ -6526,135 +7008,135 @@ void MixHandler::ChaosMixSealedBloodangelHero(uint8 data)
 		{
 			BloodAngelsSpirit++;
 		}
-		else if( item->GetItem() == ITEMGET(13, 351) ) // Fury
+		else if( item->GetItem() == ITEMGET(13, 351) ) // Fury Bloodangel Knight (Strenght)
 		{
 			SealedMasteryID = ITEMGET(8, 98);
-		}
-		else if( item->GetItem() == ITEMGET(13, 359) ) // Transcendence
-		{
-			SealedMasteryID = ITEMGET(8, 99);
-		}
-		else if( item->GetItem() == ITEMGET(13, 363) ) // Flurry
-		{
-			SealedMasteryID = ITEMGET(8, 100);
-		}
-		else if( item->GetItem() == ITEMGET(13, 371) ) // Extremity
-		{
-			SealedMasteryID = ITEMGET(8, 102);
-		}
-		else if( item->GetItem() == ITEMGET(13, 379) ) // Conquest
-		{
-			SealedMasteryID = ITEMGET(8, 103);
-		}
-		else if( item->GetItem() == ITEMGET(13, 387) ) // Honor
-		{
-			SealedMasteryID = ITEMGET(8, 101);
-		}
-		else if( item->GetItem() == ITEMGET(13, 391) ) // Destruction
-		{
-			SealedMasteryID = ITEMGET(8, 104);
-		}
-		else if( item->GetItem() == ITEMGET(13, 399) ) // Tenacity
-		{
-			SealedMasteryID = ITEMGET(8, 105);
 		}
 		else if( item->GetItem() == ITEMGET(13, 352) )
 		{
 			SealedMasteryID = ITEMGET(7, 98);
 		}
-		else if( item->GetItem() == ITEMGET(13, 360) )
-		{
-			SealedMasteryID = ITEMGET(7, 99);
-		}
-		else if( item->GetItem() == ITEMGET(13, 364) )
-		{
-			SealedMasteryID = ITEMGET(7, 100);
-		}
-		else if( item->GetItem() == ITEMGET(13, 380) )
-		{
-			SealedMasteryID = ITEMGET(7, 103);
-		}
-		else if( item->GetItem() == ITEMGET(13, 388) )
-		{
-			SealedMasteryID = ITEMGET(7, 101);
-		}
-		else if( item->GetItem() == ITEMGET(13, 392) )
-		{
-			SealedMasteryID = ITEMGET(7, 104);
-		}
-		else if( item->GetItem() == ITEMGET(13, 400) )
-		{
-			SealedMasteryID = ITEMGET(7, 105);
-		}
 		else if( item->GetItem() == ITEMGET(13, 353) )
 		{
 			SealedMasteryID = ITEMGET(9, 98);
-		}
-		else if( item->GetItem() == ITEMGET(13, 361) )
-		{
-			SealedMasteryID = ITEMGET(9, 99);
-		}
-		else if( item->GetItem() == ITEMGET(13, 365) )
-		{
-			SealedMasteryID = ITEMGET(9, 100);
-		}
-		else if( item->GetItem() == ITEMGET(13, 373) )
-		{
-			SealedMasteryID = ITEMGET(9, 102);
-		}
-		else if( item->GetItem() == ITEMGET(13, 381) )
-		{
-			SealedMasteryID = ITEMGET(9, 103);
-		}
-		else if( item->GetItem() == ITEMGET(13, 389) )
-		{
-			SealedMasteryID = ITEMGET(9, 101);
-		}
-		else if( item->GetItem() == ITEMGET(13, 393) )
-		{
-			SealedMasteryID = ITEMGET(9, 104);
-		}
-		else if( item->GetItem() == ITEMGET(13, 401) )
-		{
-			SealedMasteryID = ITEMGET(9, 105);
-		}
-		else if( item->GetItem() == ITEMGET(13, 362) )
-		{
-			SealedMasteryID = ITEMGET(10, 99);
-		}
-		else if( item->GetItem() == ITEMGET(13, 366) )
-		{
-			SealedMasteryID = ITEMGET(10, 100);
-		}
-		else if( item->GetItem() == ITEMGET(13, 374) )
-		{
-			SealedMasteryID = ITEMGET(10, 102);
-		}
-		else if( item->GetItem() == ITEMGET(13, 382) )
-		{
-			SealedMasteryID = ITEMGET(10, 103);
-		}
-		else if( item->GetItem() == ITEMGET(13, 390) )
-		{
-			SealedMasteryID = ITEMGET(10, 101);
-		}
-		else if( item->GetItem() == ITEMGET(13, 402) )
-		{
-			SealedMasteryID = ITEMGET(10, 105);
 		}
 		else if( item->GetItem() == ITEMGET(13, 354) )
 		{
 			SealedMasteryID = ITEMGET(11, 98);
 		}
+		else if( item->GetItem() == ITEMGET(13, 359) ) // Transcendence Bloodangel Wizard
+		{
+			SealedMasteryID = ITEMGET(8, 99);
+		}
+		else if( item->GetItem() == ITEMGET(13, 360) )
+		{
+			SealedMasteryID = ITEMGET(7, 99);
+		}
+		else if( item->GetItem() == ITEMGET(13, 361) )
+		{
+			SealedMasteryID = ITEMGET(9, 99);
+		}
+		else if( item->GetItem() == ITEMGET(13, 362) )
+		{
+			SealedMasteryID = ITEMGET(10, 99);
+		}
+		else if( item->GetItem() == ITEMGET(13, 363) ) // Flurry Bloodangel Elf (Agility)
+		{
+			SealedMasteryID = ITEMGET(8, 100);
+		}
+		else if( item->GetItem() == ITEMGET(13, 364) )
+		{
+			SealedMasteryID = ITEMGET(7, 100);
+		}
+		else if( item->GetItem() == ITEMGET(13, 365) )
+		{
+			SealedMasteryID = ITEMGET(9, 100);
+		}
+		else if( item->GetItem() == ITEMGET(13, 366) )
+		{
+			SealedMasteryID = ITEMGET(10, 100);
+		}
+		else if( item->GetItem() == ITEMGET(13, 387) ) // Honor Bloodangel Summoner
+		{
+			SealedMasteryID = ITEMGET(8, 101);
+		}
+		else if( item->GetItem() == ITEMGET(13, 388) )
+		{
+			SealedMasteryID = ITEMGET(7, 101);
+		}
+		else if( item->GetItem() == ITEMGET(13, 389) )
+		{
+			SealedMasteryID = ITEMGET(9, 101);
+		}
+		else if( item->GetItem() == ITEMGET(13, 390) )
+		{
+			SealedMasteryID = ITEMGET(10, 101);
+		}
+		else if( item->GetItem() == ITEMGET(13, 371) ) // Extremity Magic Gladiator (Battle)
+		{
+			SealedMasteryID = ITEMGET(8, 102);
+		}
+		else if( item->GetItem() == ITEMGET(13, 373) )
+		{
+			SealedMasteryID = ITEMGET(9, 102);
+		}
+		else if( item->GetItem() == ITEMGET(13, 374) )
+		{
+			SealedMasteryID = ITEMGET(10, 102);
+		}
 		else if( item->GetItem() == ITEMGET(13, 372) )
 		{
 			SealedMasteryID = ITEMGET(11, 102);
+		}
+		else if( item->GetItem() == ITEMGET(13, 379) ) // Conquest Dark Lord
+		{
+			SealedMasteryID = ITEMGET(8, 103);
+		}
+		else if( item->GetItem() == ITEMGET(13, 380) )
+		{
+			SealedMasteryID = ITEMGET(7, 103);
+		}
+		else if( item->GetItem() == ITEMGET(13, 381) )
+		{
+			SealedMasteryID = ITEMGET(9, 103);
+		}
+		else if( item->GetItem() == ITEMGET(13, 382) )
+		{
+			SealedMasteryID = ITEMGET(10, 103);
+		}
+		else if( item->GetItem() == ITEMGET(13, 391) ) // Destruction Bloodangel Rage Fighter
+		{
+			SealedMasteryID = ITEMGET(8, 104);
+		}
+		else if( item->GetItem() == ITEMGET(13, 392) )
+		{
+			SealedMasteryID = ITEMGET(7, 104);
+		}
+		else if( item->GetItem() == ITEMGET(13, 393) )
+		{
+			SealedMasteryID = ITEMGET(9, 104);
 		}
 		else if( item->GetItem() == ITEMGET(13, 394) )
 		{
 			SealedMasteryID = ITEMGET(11, 104);
 		}
-		else if( item->GetItem() == ITEMGET(13, 367) )
+		else if( item->GetItem() == ITEMGET(13, 399) ) // Tenacity Bloodangel Grow Lancer
+		{
+			SealedMasteryID = ITEMGET(8, 105);
+		}
+		else if( item->GetItem() == ITEMGET(13, 400) )
+		{
+			SealedMasteryID = ITEMGET(7, 105);
+		}
+		else if( item->GetItem() == ITEMGET(13, 401) )
+		{
+			SealedMasteryID = ITEMGET(9, 105);
+		}
+		else if( item->GetItem() == ITEMGET(13, 402) )
+		{
+			SealedMasteryID = ITEMGET(10, 105);
+		}
+		else if( item->GetItem() == ITEMGET(13, 367) )  //Redemption Bloodangel Elf (Energy)
 		{
 			SealedMasteryID = ITEMGET(8, 158);
 		}
@@ -6670,7 +7152,7 @@ void MixHandler::ChaosMixSealedBloodangelHero(uint8 data)
 		{
 			SealedMasteryID = ITEMGET(10, 158);
 		}
-		else if( item->GetItem() == ITEMGET(13, 375) )
+		else if( item->GetItem() == ITEMGET(13, 375) )  //Captivation Bloodangel Magic Gladiator (Energy)
 		{
 			SealedMasteryID = ITEMGET(8, 161);
 		}
@@ -6686,7 +7168,7 @@ void MixHandler::ChaosMixSealedBloodangelHero(uint8 data)
 		{
 			SealedMasteryID = ITEMGET(10, 161);
 		}
-		else if (item->GetItem() == ITEMGET(13, 355))
+		else if (item->GetItem() == ITEMGET(13, 355))  //Vengeance Bloodangel Rune Wizard
 		{
 			SealedMasteryID = ITEMGET(8, 122);
 		}
@@ -6701,6 +7183,54 @@ void MixHandler::ChaosMixSealedBloodangelHero(uint8 data)
 		else if (item->GetItem() == ITEMGET(13, 358))
 		{
 			SealedMasteryID = ITEMGET(10, 122);
+		}
+		else if (item->GetItem() == ITEMGET(13, 383))  //Hertless Bloodangel Slayer
+		{
+			SealedMasteryID = ITEMGET(8, 180);
+		}
+		else if (item->GetItem() == ITEMGET(13, 384))
+		{
+			SealedMasteryID = ITEMGET(7, 180);
+		}
+		else if (item->GetItem() == ITEMGET(13, 385))
+		{
+			SealedMasteryID = ITEMGET(9, 180);
+		}
+		else if (item->GetItem() == ITEMGET(13, 386))
+		{
+			SealedMasteryID = ITEMGET(10, 180);
+		}
+		else if( item->GetItem() == ITEMGET(13, 395) ) // Defense Bloodangel Knight (Conviction)
+		{
+			SealedMasteryID = ITEMGET(8, 200);
+		}
+		else if( item->GetItem() == ITEMGET(13, 396) )
+		{
+			SealedMasteryID = ITEMGET(7, 200);
+		}
+		else if( item->GetItem() == ITEMGET(13, 397) )
+		{
+			SealedMasteryID = ITEMGET(9, 200);
+		}
+		else if( item->GetItem() == ITEMGET(13, 398) )
+		{
+			SealedMasteryID = ITEMGET(11, 200);
+		}
+		else if( item->GetItem() == ITEMGET(13, 403) ) // Ritual Bloodangel Gun Crusher
+		{
+			SealedMasteryID = ITEMGET(8, 212);
+		}
+		else if( item->GetItem() == ITEMGET(13, 404) )
+		{
+			SealedMasteryID = ITEMGET(7, 212);
+		}
+		else if( item->GetItem() == ITEMGET(13, 405) )
+		{
+			SealedMasteryID = ITEMGET(9, 212);
+		}
+		else if( item->GetItem() == ITEMGET(13, 406) )
+		{
+			SealedMasteryID = ITEMGET(11, 212);
 		}
 	}
 
@@ -6814,6 +7344,10 @@ void MixHandler::ChaosMixElfConversionAttackToSupport(uint8 data)
 				else if (item->GetItemIndex() == 191)
 				{
 					ConversionItem = ITEMGET(item->GetItemType(), 197);
+				}
+				else if (item->GetItemIndex() == 223)
+				{
+					ConversionItem = ITEMGET(item->GetItemType(), 229);
 				}
 			}
 		}
@@ -6930,6 +7464,10 @@ void MixHandler::ChaosMixElfConversionSupportToAttack(uint8 data)
 				{
 					ConversionItem = ITEMGET(item->GetItemType(), 191);
 				}
+				else if (item->GetItemIndex() == 229)
+				{
+					ConversionItem = ITEMGET(item->GetItemType(), 223);
+				}
 			}
 		}
 	}
@@ -7044,6 +7582,10 @@ void MixHandler::ChaosMixMGConversionAttackToMagic(uint8 data)
 				else if (item->GetItemIndex() == 193)
 				{
 					ConversionItem = ITEMGET(item->GetItemType(), 198);
+				}
+				else if (item->GetItemIndex() == 225)
+				{
+					ConversionItem = ITEMGET(item->GetItemType(), 230);
 				}
 			}
 		}
@@ -7160,6 +7702,10 @@ void MixHandler::ChaosMixMGConversionMagicToAttack(uint8 data)
 				{
 					ConversionItem = ITEMGET(item->GetItemType(), 193);
 				}
+				else if (item->GetItemIndex() == 230)
+				{
+					ConversionItem = ITEMGET(item->GetItemType(), 225);
+				}
 			}
 		}
 	}
@@ -7275,6 +7821,10 @@ void MixHandler::ChaosMixKnightConversionEnergyToStrength(uint8 data)
 				{
 					ConversionItem = ITEMGET(item->GetItemType(), 189);
 				}
+				else if (item->GetItemIndex() == 233)
+				{
+					ConversionItem = ITEMGET(item->GetItemType(), 221);
+				}
 			}
 		}
 	}
@@ -7389,6 +7939,10 @@ void MixHandler::ChaosMixKnightConversionStrengthToEnergy(uint8 data)
 				else if (item->GetItemIndex() == 189)
 				{
 					ConversionItem = ITEMGET(item->GetItemType(), 205);
+				}
+				else if (item->GetItemIndex() == 221)
+				{
+					ConversionItem = ITEMGET(item->GetItemType(), 233);
 				}
 			}
 		}
@@ -7585,52 +8139,57 @@ void MixHandler::ChaosMixBindWingsCreateLvl2(uint8 data)
 		{
 		case Character::DARK_WIZARD:
 		{
-									   ConvertedWings = ITEMGET(12, 422);
+									   		ConvertedWings = ITEMGET(12, 422);
 		} break;
 
 		case Character::DARK_KNIGHT:
 		{
-									   ConvertedWings = ITEMGET(12, 423);
+									   		ConvertedWings = ITEMGET(12, 423);
 		} break;
 
 		case Character::FAIRY_ELF:
 		{
-									 ConvertedWings = ITEMGET(12, 424);
+									 		ConvertedWings = ITEMGET(12, 424);
 		} break;
 
 		case Character::MAGIC_GLADIATOR:
 		{
-										   ConvertedWings = ITEMGET(12, 425);
+											ConvertedWings = ITEMGET(12, 425);
 		} break;
 
 		case Character::DARK_LORD:
 		{
-									 ConvertedWings = ITEMGET(12, 426);
+									 		ConvertedWings = ITEMGET(12, 426);
 		} break;
 
 		case Character::SUMMONER:
 		{
-									ConvertedWings = ITEMGET(12, 427);
+											ConvertedWings = ITEMGET(12, 427);
 		} break;
 
 		case Character::RAGE_FIGHTER:
 		{
-										ConvertedWings = ITEMGET(12, 428);
+											ConvertedWings = ITEMGET(12, 428);
 		} break;
 
 		case Character::GROW_LANCER:
 		{
-									   ConvertedWings = ITEMGET(12, 429);
+									   		ConvertedWings = ITEMGET(12, 429);
 		} break;
 
 		case Character::RUNE_WIZARD:
 		{
-									   ConvertedWings = ITEMGET(12, 422);
+									   		ConvertedWings = ITEMGET(12, 422);
 		} break;
 
 		case Character::SLAYER:
 		{
-								  ConvertedWings = ITEMGET(12, 423);
+								  			ConvertedWings = ITEMGET(12, 423);
+		} break;
+
+		case Character::GUN_CRUSHER:
+		{
+									   		ConvertedWings = ITEMGET(12, 422);
 		} break;
 		}
 
@@ -7712,52 +8271,57 @@ void MixHandler::ChaosMixBindWingsCreateLvl3(uint8 data)
 		{
 		case Character::DARK_WIZARD:
 		{
-									   ConvertedWings = ITEMGET(12, 430);
+									   		ConvertedWings = ITEMGET(12, 430);
 		} break;
 
 		case Character::DARK_KNIGHT:
 		{
-									   ConvertedWings = ITEMGET(12, 431);
+									   		ConvertedWings = ITEMGET(12, 431);
 		} break;
 
 		case Character::FAIRY_ELF:
 		{
-									 ConvertedWings = ITEMGET(12, 432);
+									 		ConvertedWings = ITEMGET(12, 432);
 		} break;
 
 		case Character::MAGIC_GLADIATOR:
 		{
-										   ConvertedWings = ITEMGET(12, 433);
+										   	ConvertedWings = ITEMGET(12, 433);
 		} break;
 
 		case Character::DARK_LORD:
 		{
-									 ConvertedWings = ITEMGET(12, 434);
+									 		ConvertedWings = ITEMGET(12, 434);
 		} break;
 
 		case Character::SUMMONER:
 		{
-									ConvertedWings = ITEMGET(12, 435);
+											ConvertedWings = ITEMGET(12, 435);
 		} break;
 
 		case Character::RAGE_FIGHTER:
 		{
-										ConvertedWings = ITEMGET(12, 436);
+											ConvertedWings = ITEMGET(12, 436);
 		} break;
 
 		case Character::GROW_LANCER:
 		{
-									   ConvertedWings = ITEMGET(12, 437);
+									   		ConvertedWings = ITEMGET(12, 437);
 		} break;
 
 		case Character::RUNE_WIZARD:
 		{
-									   ConvertedWings = ITEMGET(12, 468);
+									   		ConvertedWings = ITEMGET(12, 468);
 		} break;
 
 		case Character::SLAYER:
 		{
-									   ConvertedWings = ITEMGET(12, 473);
+									   		ConvertedWings = ITEMGET(12, 473);
+		} break;
+
+		case Character::GUN_CRUSHER:
+		{
+									   		ConvertedWings = ITEMGET(12, 496);
 		} break;
 		}
 
@@ -8124,6 +8688,7 @@ void MixHandler::ChaosMixFourthWings(uint8 data)
 		m_RandomValue.AddValue(ITEMGET(12, 421), 0);
 		m_RandomValue.AddValue(ITEMGET(12, 469), 0);
 		m_RandomValue.AddValue(ITEMGET(12, 474), 0);
+		m_RandomValue.AddValue(ITEMGET(12, 490), 0);
 
 		sItemMgr->ItemSerialCreateItem(this->GetPlayer(), serial_create_chaos_box, Item(m_RandomValue.GetRandomValue(RANDOM_POOL_RANDOM), 0, 0, 0, luck, option, exe, 0, socket), 1);
 		this->ChaosMixLogSuccess();
@@ -8516,6 +9081,122 @@ void MixHandler::ChaosMixUpgradeEarringAncestorsToHonor(uint8 data)
 	this->ChaosMixDBSave();
 }
 
+void MixHandler::ChaosMixUpgradeEarringHonorToBlood(uint8 data)
+{
+	int32 jewel_chaos = 0;
+	int32 framework = 0;
+	int32 jewel_creation = 0;
+	int32 jewel_bless_pack = 0;
+	int32 jewel_soul_pack = 0;
+	int32 earring_level = 0;
+	uint16 earring_item = -1;
+	uint8 earring_option_count = 0;
+
+	chaos_box_loop(i)
+	{
+		Item const& item = this->GetPlayer()->GetMixInventory()->item[i];
+
+		if (!item.IsItem())
+			continue;
+
+		if (item.GetItem() == JEWEL::CHAOS)
+		{
+			jewel_chaos += item.GetDurability();
+		}
+		else if (item.GetItem() == ITEMGET(20, 77))
+		{
+			framework++;
+		}
+		else if (item.GetItem() == JEWEL::CREATION)
+		{
+			jewel_creation += item.GetDurability();
+		}
+		else if (item.GetItem() == JEWEL::BLESS)
+		{
+			jewel_bless_pack += item.GetDurability();
+		}
+		else if (item.GetItem() == JEWEL::SOUL)
+		{
+			jewel_soul_pack += item.GetDurability();
+		}
+		else if (item.IsEarring())
+		{
+			earring_level = item.GetLevel();
+			earring_option_count = item.GetActiveSocketCount();
+
+			switch (item.GetItem())
+			{
+			case ITEMGET(12, 451):
+			case ITEMGET(12, 459):
+			{
+									 earring_item = item.GetItem() + 1;
+			} break;
+			}
+		}
+	}
+
+	if (jewel_chaos < 1 || framework < 1 || jewel_creation < 1 || jewel_bless_pack < 20 || jewel_soul_pack < 20 || earring_level < 11 || earring_item == uint16(-1))
+	{
+		this->ChaosMixLogLackingMixItems();
+		return;
+	}
+
+	this->success_rate.set(60);
+
+	switch (earring_level)
+	{
+	case 11:
+	{
+			   this->success_rate.set(60);
+	} break;
+
+	case 12:
+	{
+			   this->success_rate.set(70);
+	} break;
+
+	case 13:
+	{
+			   this->success_rate.set(80);
+	} break;
+
+	case 14:
+	{
+			   this->success_rate.set(90);
+	} break;
+
+	case 15:
+	{
+			   this->success_rate.set(100);
+	} break;
+	}
+
+	//if (!this->tributeTaxPrice())
+	//	return;
+
+	this->ChaosMixDebugMessage();
+
+	if (this->roll_success())
+	{
+		Item item(earring_item);
+
+		sItemMgr->GenerateEarringOptions(&item, earring_option_count >= 3 ? 2 : 1);
+
+		sItemMgr->ItemSerialCreateItem(this->GetPlayer(), serial_create_chaos_box, item, 1);
+		this->ChaosMixLogSuccess();
+	}
+	else
+	{
+		this->GetPlayer()->GetInterfaceState()->SetState(0);
+		this->ChaosMixEarringItemDown();
+		this->GetPlayer()->ChaosMixSend(0);
+		this->GetPlayer()->ChaosMixResult(CHAOS_MIX_RESULT_FAIL);
+		this->ChaosMixLogFail();
+	}
+
+	this->ChaosMixDBSave();
+}
+
 void MixHandler::ChaosMixSealArmorPiece(uint8 data)
 {
 	int32 jewel_chaos = 0;
@@ -8673,6 +9354,8 @@ void MixHandler::ChaosMixScratchedSealedBloodangel(uint8 data)
 			}
 
 			m_RandomValue.AddValue(ITEMGET(type, 180), 0);
+			m_RandomValue.AddValue(ITEMGET(type, 200), 0);  //Blood Angel Knight(Conviction)
+			m_RandomValue.AddValue(ITEMGET(type, 212), 0);  //Blood Angel GunCrusher
 
 			item = m_RandomValue.GetRandomValue(RANDOM_POOL_RANDOM);
 			ancient = sItemMgr->GetRandomOptionAncient(item);
@@ -11904,7 +12587,7 @@ void MixHandler::PetTrainerGuardianResurrection(uint8 type, uint8 id, uint8 main
 				sItemMgr->GenerateGuardianOptions(&item, 2);
 			}
 
-			sItemMgr->ItemSerialCreateItem(this->GetPlayer(), serial_create_socket_mix, item);
+			sItemMgr->ItemSerialCreateItem(this->GetPlayer(), serial_create_socket_mix, Item(pMixGuardian->GetResultItem(),pMixGuardian->GetResultLevel(),255),1);
 		}
 		else
 		{

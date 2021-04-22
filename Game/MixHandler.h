@@ -174,20 +174,23 @@ class MixHandler
 		void ChaosMixAncientHeroSoul(uint8 data);
 		void ChaosMixSealedMasteryFinal(uint8 data);
 
-		void ChaosMixBloodangelToDarkangelSet(uint8 data);
+		
 
 		void ChaosMixArchangelsHammer(uint8 data);
 		void ChaosMixUpgradeDivineArchangelWeapon(uint8 data);
-
+			//Master Sets Upgrade
+		void ChaosMixBloodangelToDarkangelSet(uint8 data);
 		void ChaosMixUpgradeDarkangelToHolyangelSet(uint8 data);
 		void ChaosMixUpgradeHolyangelToAwakeningSet(uint8 data);
 		void ChaosMixUpgradeAwakeningToBlueEyeSet(uint8 data);
 		void ChaosMixUpgradeBlueEyeToSilverHeartSet(uint8 data);
-
+		void ChaosMixUpgradeSilverHearToManticoretSet(uint8 data);
+			//Master Weapon Upgrade
 		void ChaosMixUpgradeBloodangelToDarkangelWeapon(uint8 data);
 		void ChaosMixUpgradeDarkangelToHolyangelWeapon(uint8 data);
 		void ChaosMixUpgradeHolyangelToSoulWeapon(uint8 data);
 		void ChaosMixUpgradeSoulToBlueEyeWeapon(uint8 data);
+		void ChaosMixUpgradeBlueEyeToSilverHartWeapon(uint8 data);
 
 		void ChaosMixSealedBloodangelHero(uint8 data);
 		void ChaosMixElfConversionAttackToSupport(uint8 data);
@@ -204,9 +207,10 @@ class MixHandler
 		void ChaosMixGarudaFeather(uint8 data);
 		void ChaosMixFourthWings(uint8 data);
 		void ChaosMixHandcraftStones(uint8 data);
-
+			//Earring Upgrade Mix
 		void ChaosMixUpgradeEarringRageToAncestors(uint8 data);
 		void ChaosMixUpgradeEarringAncestorsToHonor(uint8 data);
+		void ChaosMixUpgradeEarringHonorToBlood(uint8 data);
 
 		void ChaosMixSealArmorPiece(uint8 data);
 		void ChaosMixScratchedSealedBloodangel(uint8 data);
