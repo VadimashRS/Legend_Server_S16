@@ -647,7 +647,7 @@ void Item::ConvertToBuffer(uint8 * buffer) const
 			}
 			else
 			{
-				/// - Establezco la opción sin nivel
+				/// - Establezco la opciï¿½n sin nivel
 				uint8 socket_option = this->GetSocket(i) % MAX_SOCKET_OPTION;
 
 				/// - Calculo el nivel actual y lo divido por 5
@@ -1413,10 +1413,12 @@ bool Item::IsWingType(uint8 type) const
 
 	switch (this->GetItem())
 	{
-	case ITEMGET(12, 414):
-	case ITEMGET(12, 438):
-	case ITEMGET(12, 469):
-	case ITEMGET(12, 470):
+	case ITEMGET(12, 414):  //Elysium's Wings(SM)
+	case ITEMGET(12, 438):  //[Bound] Elysium's Wings(SM)
+	case ITEMGET(12, 469):  //Wings of Destiny(RW)
+	case ITEMGET(12, 470):  //[Bound] Wings of Destiny(RW)???
+	case ITEMGET(12, 490):  //Wings of Blood(GC)???
+	case ITEMGET(12, 497):  //[Bound]Wings of Blood(GC)???
 	{
 				 if (type != 2)
 				 {
@@ -1426,18 +1428,18 @@ bool Item::IsWingType(uint8 type) const
 				 result = true;
 	} break;
 
-	case ITEMGET(12, 415):
-	case ITEMGET(12, 416):
-	case ITEMGET(12, 418):
-	case ITEMGET(12, 420):
-	case ITEMGET(12, 421):
-	case ITEMGET(12, 439):
-	case ITEMGET(12, 440):
-	case ITEMGET(12, 442):
-	case ITEMGET(12, 444):
-	case ITEMGET(12, 445):
-	case ITEMGET(12, 474):
-	case ITEMGET(12, 477):
+	case ITEMGET(12, 415):  //Flame God's Wings"
+	case ITEMGET(12, 416):  //Celestial Body's Wings
+	case ITEMGET(12, 418):  //Dominator's Cloak
+	case ITEMGET(12, 420):  //Judgment's Cloak
+	case ITEMGET(12, 421):  //Isolation's Cloak
+	case ITEMGET(12, 439):  //[Bound] Flame God's Wings
+	case ITEMGET(12, 440):  //[Bound] Celestial Body's Wings
+	case ITEMGET(12, 442):  //[Bound] Dominator's Cloak
+	case ITEMGET(12, 444):  //[Bound] Judgment's Cloak
+	case ITEMGET(12, 445):  //[Bound] Isolation's Cloak
+	case ITEMGET(12, 474):  //Wings of Coviction
+	case ITEMGET(12, 475):  //[Bound] Wings of Coviction
 	{
 				 if (type != 1)
 				 {
@@ -1447,8 +1449,8 @@ bool Item::IsWingType(uint8 type) const
 				 result = true;
 	} break;
 
-	case ITEMGET(12, 417):
-	case ITEMGET(12, 441):
+	case ITEMGET(12, 417):  //Annihilation's Wings
+	case ITEMGET(12, 441):  //[Bound] Annihilation's Wings
 	{
 				 if (type != 1 && type != 2)
 				 {
@@ -1458,8 +1460,8 @@ bool Item::IsWingType(uint8 type) const
 				 result = true;
 	} break;
 
-	case ITEMGET(12, 419):
-	case ITEMGET(12, 443):
+	case ITEMGET(12, 419):  //Other World's Wings
+	case ITEMGET(12, 443):  //[Bound] Other World's Wings
 	{
 				 if (type != 2 && type != 3)
 				 {
@@ -1469,7 +1471,7 @@ bool Item::IsWingType(uint8 type) const
 				 result = true;
 	} break;
 
-	case ITEMGET(12, 480):
+	case ITEMGET(12, 480):  //Wing of Power
 	{
 				 if (type != 1 && type != 2 && type != 3)
 				 {
@@ -3089,21 +3091,21 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 
 			switch (this->GetItem())
 			{
-			case ITEMGET(12, 0):
+			case ITEMGET(12, 0):  //Wings of Fairy
 				this->AddOptionData(ItemOption::HP_RECOVERY, this->GetOption());
 				break;
 
-			case ITEMGET(12, 1):
-			case ITEMGET(12, 41):
+			case ITEMGET(12, 1):  //Wings of Heaven
+			case ITEMGET(12, 41):  //Wings of Mistery
 				this->AddOptionData(ItemOption::WIZARDRY_DAMAGE, 4 * this->GetOption());
 				break;
 
-			case ITEMGET(12, 2):
+			case ITEMGET(12, 2):  //Wings of Satan
 				this->AddOptionData(ItemOption::PHYSICAL_DAMAGE, 4 * this->GetOption());
 				break;
 
-			case ITEMGET(12, 3):
-			case ITEMGET(12, 424):
+			case ITEMGET(12, 3):  //Wings of Spirit
+			case ITEMGET(12, 424):  //[Bound] Wings of Spirit
 				if (this->GetExe() & 0x20)
 				{
 					this->AddOptionData(ItemOption::HP_RECOVERY, this->GetOption());
@@ -3114,8 +3116,8 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 4):
-			case ITEMGET(12, 422):
+			case ITEMGET(12, 4):  //Wings of Archangel
+			case ITEMGET(12, 422):  //[Bound] Wings of Archangel
 				if (this->GetExe() & 0x20)
 				{
 					this->AddOptionData(ItemOption::WIZARDRY_DAMAGE, 4 * this->GetOption());
@@ -3126,10 +3128,10 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 5):
-			case ITEMGET(12, 49):
-			case ITEMGET(12, 423):
-			case ITEMGET(12, 428):
+			case ITEMGET(12, 5):  //Wings of Dragon
+			case ITEMGET(12, 49):  //Cape of Fighter
+			case ITEMGET(12, 423):  //[Bound] Wings of Dragon
+			case ITEMGET(12, 428):  //[Bound] Cape of Fighter
 				if (this->GetExe() & 0x20)
 				{
 					this->AddOptionData(ItemOption::PHYSICAL_DAMAGE, 4 * this->GetOption());
@@ -3140,8 +3142,8 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 6):
-			case ITEMGET(12, 425):
+			case ITEMGET(12, 6):  //Wings of Darkness
+			case ITEMGET(12, 425):  //[Bound] Wings of Darkness
 				if (this->GetExe() & 0x20)
 				{
 					this->AddOptionData(ItemOption::PHYSICAL_DAMAGE, 4 * this->GetOption());
@@ -3152,8 +3154,8 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 42):
-			case ITEMGET(12, 427):
+			case ITEMGET(12, 42):  //Wings of Despair
+			case ITEMGET(12, 427):  //[Bound] Wings of Despair
 				if (this->GetExe() & 0x20)
 				{
 					this->AddOptionData(ItemOption::WIZARDRY_DAMAGE, 4 * this->GetOption());
@@ -3164,34 +3166,35 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(13, 30):
-			case ITEMGET(12, 426):
+			case ITEMGET(13, 30):  //Cape of Lord
+			case ITEMGET(12, 426):  //[Bound] Cape of Lord
 				this->AddOptionData(ItemOption::PHYSICAL_DAMAGE, 4 * this->GetOption());
 				break;
 
-			case ITEMGET(12, 36):
-			case ITEMGET(12, 38):
-			case ITEMGET(12, 40):
-			case ITEMGET(12, 50):
-			case ITEMGET(12, 270):
-			case ITEMGET(12, 431):
-			case ITEMGET(12, 432):
-			case ITEMGET(12, 434):
-			case ITEMGET(12, 436):
-			case ITEMGET(12, 437):
-			case ITEMGET(12, 415):
-			case ITEMGET(12, 439):
-			case ITEMGET(12, 416):
-			case ITEMGET(12, 440):
-			case ITEMGET(12, 418):
-			case ITEMGET(12, 442):
-			case ITEMGET(12, 420):
-			case ITEMGET(12, 444):
-			case ITEMGET(12, 421):
-			case ITEMGET(12, 445):
-			case ITEMGET(12, 472):
-			case ITEMGET(12, 473):
-			case ITEMGET(12, 474):
+			case ITEMGET(12, 36):  //Wings of Storm
+			case ITEMGET(12, 38):  //Wings of Illusion
+			case ITEMGET(12, 40):  //ape of Emperor
+			case ITEMGET(12, 50):  //Cape of Overrule
+			case ITEMGET(12, 270):  //Cloak of Transcendence
+			case ITEMGET(12, 431):  //[Bound] Wings of Storm
+			case ITEMGET(12, 432):  //[Bound] Wings of Illusion
+			case ITEMGET(12, 434):  //[Bound] Cape of Emperor
+			case ITEMGET(12, 436):  //[Bound] Cape of Overrule
+			case ITEMGET(12, 437):  //[Bound] Cloak of Transcendence
+			case ITEMGET(12, 415):  //Flame God's Wings
+			case ITEMGET(12, 439):  //[Bound] Flame God's Wings
+			case ITEMGET(12, 416):  //Celestial Body's Wings
+			case ITEMGET(12, 440):  //[Bound] Celestial Body's Wings
+			case ITEMGET(12, 418):  //Dominator's Cloak"
+			case ITEMGET(12, 442):  //[Bound] Dominator's Cloak
+			case ITEMGET(12, 420):  //Judgment's Cloak
+			case ITEMGET(12, 444):  //[Bound] Judgment's Cloak
+			case ITEMGET(12, 421):  //Isolation's Cloak
+			case ITEMGET(12, 445):  //Bound] Isolation's Cloak
+			case ITEMGET(12, 472):  //Wings of Silence
+			case ITEMGET(12, 473):  //[Bound] Wings of Silence
+			case ITEMGET(12, 474):  //Wings of Coviction
+			case ITEMGET(12, 475):  //[Bound]Wings of Coviction
 				if (this->GetExe() & 0x10)
 				{
 					this->AddOptionData(ItemOption::PHYSICAL_DAMAGE, 4 * this->GetOption());
@@ -3206,13 +3209,18 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 37):
-			case ITEMGET(12, 430):
-			case ITEMGET(12, 414):
-			case ITEMGET(12, 438):
-			case ITEMGET(12, 467):
-			case ITEMGET(12, 468):
-			case ITEMGET(12, 469):
+			case ITEMGET(12, 37):  //Wings of Eternal
+			case ITEMGET(12, 430):  //Bound] Wings of Eternal
+			case ITEMGET(12, 414):  //Elysium's Wings
+			case ITEMGET(12, 438):  //[Bound] Elysium's Wings
+			case ITEMGET(12, 467):  //Wings of Disillusion
+			case ITEMGET(12, 468):  //[Bound] Wings of Disillusion
+			case ITEMGET(12, 469):  //Wings of Destiny
+			case ITEMGET(12, 470):  //[Bound]Wings of Destiny
+			case ITEMGET(12, 489):  //Wings of Hit
+			case ITEMGET(12, 496):  //[Bound]Wings of Hit
+			case ITEMGET(12, 490):  //Wings of Blood
+			case ITEMGET(12, 497):  //[Bound]Wings of Blood
 				if (this->GetExe() & 0x10)
 				{
 					this->AddOptionData(ItemOption::WIZARDRY_DAMAGE, 4 * this->GetOption());
@@ -3227,10 +3235,10 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 39):
-			case ITEMGET(12, 433):
-			case ITEMGET(12, 417):
-			case ITEMGET(12, 441):
+			case ITEMGET(12, 39):  //Wings of Ruin
+			case ITEMGET(12, 433):  //[Bound] Wings of Ruin
+			case ITEMGET(12, 417):  //Annihilation's Wings
+			case ITEMGET(12, 441):  //[Bound] Annihilation's Wings
 				if (this->GetExe() & 0x10)
 				{
 					this->AddOptionData(ItemOption::PHYSICAL_DAMAGE, 4 * this->GetOption());
@@ -3245,10 +3253,10 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 43):
-			case ITEMGET(12, 435):
-			case ITEMGET(12, 419):
-			case ITEMGET(12, 443):
+			case ITEMGET(12, 43):  //Wings of Dimension
+			case ITEMGET(12, 435):  //[Bound] Wing of Dimension
+			case ITEMGET(12, 419):  //Other World's Wings
+			case ITEMGET(12, 443):  //[Bound] Other World's Wings
 				if (this->GetExe() & 0x10)
 				{
 					this->AddOptionData(ItemOption::WIZARDRY_DAMAGE, 4 * this->GetOption());
@@ -3263,8 +3271,8 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 269):
-			case ITEMGET(12, 429):
+			case ITEMGET(12, 269):  //Cloak of Limit
+			case ITEMGET(12, 429):  //[Bound] Cloak of Limit
 				if (this->GetExe() & 0x20)
 				{
 					this->AddOptionData(ItemOption::PHYSICAL_DAMAGE, 4 * this->GetOption());
@@ -3275,15 +3283,15 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 262):
-			case ITEMGET(12, 263):
-			case ITEMGET(12, 265):
-			case ITEMGET(12, 279):
-			case ITEMGET(12, 280):
-			case ITEMGET(12, 282):
-			case ITEMGET(12, 284):
-			case ITEMGET(12, 285):
-			case ITEMGET(12, 287):
+			case ITEMGET(12, 262):  //Cloak of Death
+			case ITEMGET(12, 263):  //Wings of Chaos
+			case ITEMGET(12, 265):  //Wings of Life
+			case ITEMGET(12, 279):  //[Bound] Cloak of Death
+			case ITEMGET(12, 280):  //[Bound] Wings of Chaos
+			case ITEMGET(12, 282):  //[Bound] Wings of Life
+			case ITEMGET(12, 284):  //[PC] Cloak of Death
+			case ITEMGET(12, 285):  //[PC] Wings of Chaos
+			case ITEMGET(12, 287):  //[PC] Wings of Life
 				if (this->GetExe() & 0x10)
 				{
 					this->AddOptionData(ItemOption::PHYSICAL_DAMAGE, 4 * this->GetOption());
@@ -3294,9 +3302,9 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 264):
-			case ITEMGET(12, 281):
-			case ITEMGET(12, 286):
+			case ITEMGET(12, 264):  //Wings of Magic
+			case ITEMGET(12, 281):  //[Bound] Wings of Magic
+			case ITEMGET(12, 286):  //[PC] Wings of Magic
 				if (this->GetExe() & 0x10)
 				{
 					this->AddOptionData(ItemOption::WIZARDRY_DAMAGE, 4 * this->GetOption());
@@ -3307,11 +3315,11 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 				}
 				break;
 
-			case ITEMGET(12, 266):
+			case ITEMGET(12, 266):  //Wings of Conqueror
 				this->AddOptionData(ItemOption::HP_RECOVERY, this->GetOption());
 				break;
 
-			case ITEMGET(12, 268):
+			case ITEMGET(12, 268):  //Wings of Conqueror (Premium)
 				if (this->GetExe() & 0x20)
 				{
 					this->AddOptionData(ItemOption::WIZARDRY_DAMAGE, 4 * this->GetOption());
