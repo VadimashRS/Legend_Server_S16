@@ -11,7 +11,7 @@ static const WORD LoginServerPORT = 44405;
 ///- SERVER TEST
 static const char ClientVersion[8] = "1.07.17";
 static const char ClientSerial[17] = "jw45af7xf4wxj198";
-static const char IpAddress[14] = "192.168.1.60";
+static const char IpAddress[16] = "192.168.1.60";
 
 static const char* ScreenShotPath = "ScreenShots\\Screen(%02d_%02d-%02d-%02d)-%04d.jpg";
 
