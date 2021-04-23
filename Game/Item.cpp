@@ -1417,7 +1417,7 @@ bool Item::IsWingType(uint8 type) const
 	case ITEMGET(12, 438):  //[Bound] Elysium's Wings(SM)
 	case ITEMGET(12, 469):  //Wings of Destiny(RW)
 	case ITEMGET(12, 470):  //[Bound] Wings of Destiny(RW)???
-	case ITEMGET(12, 490):  //Wings of Blood(GC)???
+	case ITEMGET(12, 490):  //Wings of Blood(GC)
 	case ITEMGET(12, 497):  //[Bound]Wings of Blood(GC)???
 	{
 				 if (type != 2)
