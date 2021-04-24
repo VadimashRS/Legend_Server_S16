@@ -899,6 +899,9 @@ enum
 		32 = SUM
 		64 = RF
 		128 = GL
+		256 = RW
+		512 = SL
+		1024 = GC
 		*/
 
 enum MatchingClassFlag
@@ -913,6 +916,7 @@ enum MatchingClassFlag
 	MATCHING_GROW_LANCER		= 1 << 7,
 	MATCHING_RUNE_WIZARD		= 1 << 8,
 	MATCHING_SLAYER				= 1 << 9,
+	MATCHING_GUN_CRUSHER		= 1 << 10,
 };
 
 enum ServerType
