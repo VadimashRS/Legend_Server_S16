@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : Local
+ Source Server         : localhost_3306
  Source Server Type    : MySQL
- Source Server Version : 50731
- Source Host           : 127.0.0.1:3306
- Source Schema         : server_legend_game
+ Source Server Version : 80023
+ Source Host           : localhost:3306
+ Source Schema         : mu_online_game
 
  Target Server Type    : MySQL
- Target Server Version : 50731
+ Target Server Version : 80023
  File Encoding         : 65001
 
- Date: 13/03/2021 19:16:37
+ Date: 29/04/2021 09:11:47
 */
 
 SET NAMES utf8mb4;
@@ -21,23 +21,24 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- Table structure for world_template
 -- ----------------------------
 DROP TABLE IF EXISTS `world_template`;
-CREATE TABLE `world_template`  (
-  `entry` smallint(5) UNSIGNED NOT NULL,
-  `display_entry` smallint(5) UNSIGNED NOT NULL,
-  `state` tinyint(3) UNSIGNED NOT NULL,
+CREATE TABLE `world_template` (
+  `entry` smallint unsigned NOT NULL,
+  `display_entry` smallint unsigned NOT NULL,
+  `state` tinyint unsigned NOT NULL,
   `file` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `name` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `spawn_gate` smallint(5) UNSIGNED NOT NULL,
-  `experience_rate` int(10) UNSIGNED NOT NULL,
-  `zen_rate` int(10) UNSIGNED NOT NULL,
-  `flags` int(10) UNSIGNED NOT NULL,
-  `comment` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
-  PRIMARY KEY (`entry`, `state`) USING BTREE
-) ENGINE = MyISAM CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+  `spawn_gate` smallint unsigned NOT NULL,
+  `experience_rate` int unsigned NOT NULL,
+  `zen_rate` int unsigned NOT NULL,
+  `flags` int unsigned NOT NULL,
+  `comment` text CHARACTER SET utf8 COLLATE utf8_general_ci,
+  PRIMARY KEY (`entry`,`state`) USING BTREE
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of world_template
 -- ----------------------------
+BEGIN;
 INSERT INTO `world_template` VALUES (0, 0, 0, 'Terrain1.att', 'Lorencia', 17, 100, 100, 89518206, NULL);
 INSERT INTO `world_template` VALUES (1, 1, 0, 'Terrain2.att', 'Dungeon', 17, 100, 100, 89518202, NULL);
 INSERT INTO `world_template` VALUES (2, 2, 0, 'Terrain3.att', 'Devias', 22, 100, 100, 89518206, NULL);
@@ -160,5 +161,7 @@ INSERT INTO `world_template` VALUES (131, 131, 0, 'Terrain132.att', 'Scorched Ca
 INSERT INTO `world_template` VALUES (207, 103, 0, 'Terrain103.att', 'Special Event Map', 503, 100, 100, 90386, 'Special Event Map');
 INSERT INTO `world_template` VALUES (132, 132, 0, 'Terrain133.att', 'Scarlet Icarus', 631, 100, 100, 89518202, '');
 INSERT INTO `world_template` VALUES (133, 133, 0, 'Terrain134.att', 'Temple of Arnil', 634, 100, 100, 89518202, '');
+INSERT INTO `world_template` VALUES (134, 134, 0, 'Terrain135.att', 'Ashen Aida', 643, 100, 100, 89518202, '');
+COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
