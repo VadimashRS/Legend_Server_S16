@@ -52,6 +52,8 @@ void PartyMatching::HandleRegister(Player* pPlayer, uint8 * Packet)
 	else
 	{
 		pParty = sPartyMgr->Create(pPlayer);
+		pParty->ListAllMembers();
+		pPlayer->GetInterfaceState()->Reset();
 	}
 
 	if (!pParty)
@@ -265,6 +267,7 @@ void PartyMatching::HandleJoin(Player* pPlayer, uint8 * Packet)
 	else
 	{
 		this->Notify(pParty, pPlayer, 1);
+		pParty->ListAllMembers();
 	}
 }
 
@@ -393,11 +396,13 @@ void PartyMatching::HandleAccept(Player* pPlayer, uint8 * Packet)
 	}
 
 	pPlayer->SendPacket(&pMsg);
+	
 
 	if (Player* pMember = sObjectMgr->FindPlayerByName(lpMsg->name))
 	{
 		this->Notify(pParty, pMember, ((lpMsg->type == 0) ? 2 : 1));
 
+		pParty->ListAllMembers();
 		//PMSG_PARTY_MATCHING_JOIN_LIST_RECV pMsg1;
 		//this->JoinListRecv(pPlayer, (uint8*)&pMsg1);
 	}
