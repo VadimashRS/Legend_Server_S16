@@ -1268,6 +1268,7 @@ public:
 	TeleportBuffList m_TeleportBuffCoordinate;
 
 	DECLARE_ENUM(uint8, RareIceDragonRate);
+	DECLARE_ENUM(uint8, RarePierceRyanRate);
 
 	DECLARE_BOOL(AttackTimeNullKick);
 

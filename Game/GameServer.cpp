@@ -1146,6 +1146,7 @@ void GameServer::LoadCommonSettings()
 	SplitToVector(this->m_TeleportBuffCoordinate, sMain->GetString("TeleportCoordinateBuff", "57 241"));
 
 	this->SetRareIceDragonRate(sMain->GetUInt8("RareIceDragonRate", 5));
+	this->SetRarePierceRyanRate(sMain->GetUInt8("RarePierceRyanRate", 5));
 
 	this->SetAttackTimeNullKick(sMain->GetBool("AttackTime.NullKick", true));
 
@@ -1813,19 +1814,19 @@ void GameServer::UpdateAccountsDisconnect()
 
 void GameServer::PostManageUpdate()
 {
-	if ( !this->IsPostManageMACEnabled() ) ///- Si el sistema de MAC no está habilitado, entonces no sigo
+	if ( !this->IsPostManageMACEnabled() ) ///- Si el sistema de MAC no estï¿½ habilitado, entonces no sigo
 	{
 		return;
 	}
 
-	if ( !this->GetPostManageMACUpdate()->Elapsed(IN_MILLISECONDS) ) ///- Si no transcurrió 1 segundo desde el último update, entonces no sigo
+	if ( !this->GetPostManageMACUpdate()->Elapsed(IN_MILLISECONDS) ) ///- Si no transcurriï¿½ 1 segundo desde el ï¿½ltimo update, entonces no sigo
 	{
 		return;
 	}
 
 	Custom::SystemTimer time = Custom::SystemTimer();
 
-	if ( time.GetDay() != this->GetPostManageMACDay() ) ///- Si el día actual es diferente al útlimo día verificado, entonces actualizo el día y restauro la lista
+	if ( time.GetDay() != this->GetPostManageMACDay() ) ///- Si el dï¿½a actual es diferente al ï¿½tlimo dï¿½a verificado, entonces actualizo el dï¿½a y restauro la lista
 	{
 		this->SetPostManageMACDay(time.GetDay());
 		this->post_manage_mac_map.clear();
@@ -1834,18 +1835,18 @@ void GameServer::PostManageUpdate()
 
 void GameServer::PostManageUpdate(Player* pPlayer)
 {
-	if ( !pPlayer ) ///- No debería pasar, pero reviso que el puntero no sea nulo
+	if ( !pPlayer ) ///- No deberï¿½a pasar, pero reviso que el puntero no sea nulo
 	{
 		return;
 	}
 
-	if ( !this->IsPostManageEnabled() ) ///- Si el sistema no está habilitado, entonces no sigo
+	if ( !this->IsPostManageEnabled() ) ///- Si el sistema no estï¿½ habilitado, entonces no sigo
 	{
 		return;
 	}
 
 	Custom::SystemTimer time = Custom::SystemTimer();
-	///- Si las fechas son diferentes, entonces actualizo las fechas del jugador, reseto el contador del jugador y le envío un mensaje para notificarle
+	///- Si las fechas son diferentes, entonces actualizo las fechas del jugador, reseto el contador del jugador y le envï¿½o un mensaje para notificarle
 	if ( time.GetDay() != pPlayer->GetPostDay() || time.GetMonth() != pPlayer->GetPostMonth() )
 	{
 		pPlayer->SetPostDay(time.GetDay());
@@ -1858,12 +1859,12 @@ void GameServer::PostManageUpdate(Player* pPlayer)
 
 bool GameServer::CanPost(Player* pPlayer, std::string const& message)
 {
-	if ( !pPlayer ) ///- No debería pasar, pero reviso que el puntero no sea nulo
+	if ( !pPlayer ) ///- No deberï¿½a pasar, pero reviso que el puntero no sea nulo
 	{
 		return false;
 	}
 
-	if ( this->IsAntiSpamEnabled() ) ///- Si el sistema de antispam está habilitado, entonces proceso el texto
+	if ( this->IsAntiSpamEnabled() ) ///- Si el sistema de antispam estï¿½ habilitado, entonces proceso el texto
 	{
 		if ( message == pPlayer->GetAntiSpamMessage() ) ///- En caso de que sea el mismo mensaje, sumo 1
 		{
@@ -1892,14 +1893,14 @@ bool GameServer::CanPost(Player* pPlayer, std::string const& message)
 		}
 	}
 
-	if ( !this->IsPostManageEnabled() ) ///- Si el sistema no está habilitado, entonces le permito postear
+	if ( !this->IsPostManageEnabled() ) ///- Si el sistema no estï¿½ habilitado, entonces le permito postear
 	{
 		return true;
 	}
 
 	if ( pPlayer->GetPostCount() >= this->GetPostManageCount() )
 	{
-		pPlayer->SendNotice(CUSTOM_MESSAGE_ID_RED, "Has superado el límite de post diarios.");
+		pPlayer->SendNotice(CUSTOM_MESSAGE_ID_RED, "Has superado el lï¿½mite de post diarios.");
 		return false;
 	}
 
@@ -1907,7 +1908,7 @@ bool GameServer::CanPost(Player* pPlayer, std::string const& message)
 
 	if ( post_mac_count >= this->GetPostManageMACCount() )
 	{
-		pPlayer->SendNotice(CUSTOM_MESSAGE_ID_RED, "Has superado el límite de post diarios.");
+		pPlayer->SendNotice(CUSTOM_MESSAGE_ID_RED, "Has superado el lï¿½mite de post diarios.");
 		return false;
 	}
 

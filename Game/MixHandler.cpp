@@ -12611,7 +12611,7 @@ void MixHandler::PetTrainerGuardianResurrection(uint8 type, uint8 id, uint8 main
 					item.SetItem(ITEMGET(12, 484));
 				}
 				// 3rd Guatdian(Test)
-				else if (pMixGuardian->GetResultItem() == ITEMGET(12, 75) && roll_chance_i(sGameServer->GetRareIceDragonRate()))
+				if (pMixGuardian->GetResultItem() == ITEMGET(12, 75) && roll_chance_i(sGameServer->GetRarePierceRyanRate()))
 				{
 					item.SetItem(ITEMGET(12, 76));
 				}
