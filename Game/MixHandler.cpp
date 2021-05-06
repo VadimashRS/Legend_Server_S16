@@ -832,7 +832,6 @@ ChaosMixHandler ChaosMixTable[] =
 	{ 1262, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
 	{ 1263, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
 	{ 1264, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
-
 /*
 Season 16 2-1
 */
@@ -846,6 +845,14 @@ Season 16 2-1
 	{ 1448, "[ Upgrade Earring Honor To Blood +12 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
 	{ 1449, "[ Upgrade Earring Honor To Blood +11 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
 	{ 1450, "[ Upgrade Earring Honor To Blood +11 ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeEarringHonorToBlood, false, 0 },
+/*
+Season 16 2-2  MG Swords
+*/
+	{ 1451, "[ Upgrade Bloodangel To Darkangel Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon, false, 0 },
+	{ 1452, "[ Upgrade Darkangel To Holyangel Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeDarkangelToHolyangelWeapon, false, 0 },
+	{ 1453, "[ Upgrade Holyangel To Soul Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeHolyangelToSoulWeapon, false, 0 },
+	{ 1454, "[ Upgrade Soul To Blue Eye Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeSoulToBlueEyeWeapon, false, 0 },
+	{ 1455, "[ Upgrade Blue Eye To Silver Heart Weapon ]", InterfaceData::ChaosMachine, &MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon, false, 0 },
 
 
 	{0xFFFF,	"[ NULL ]",	InterfaceData::None,	&MixHandler::ChaosMixNone , false, 0 },
@@ -6290,6 +6297,10 @@ void MixHandler::ChaosMixUpgradeBloodangelToDarkangelWeapon(uint8 data)
 			{
 				Weapon = ITEMGET(0, 72);
 			}
+			else if (item->GetItem() == ITEMGET(0, 89))  //MG S16 2-2
+			{
+				Weapon = ITEMGET(0, 90);
+			}
 			else if( item->GetItem() == ITEMGET(2, 22) )
 			{
 				Weapon = ITEMGET(2, 26);
@@ -6439,6 +6450,10 @@ void MixHandler::ChaosMixUpgradeDarkangelToHolyangelWeapon(uint8 data)
 			else if (item->GetItem() == ITEMGET(0, 56))
 			{
 				Weapon = ITEMGET(0, 59);
+			}
+			else if (item->GetItem() == ITEMGET(0, 90))  //MD S16 2-2
+			{
+				Weapon = ITEMGET(0, 91);
 			}
 			else if (item->GetItem() == ITEMGET(2, 26))
 			{
@@ -6594,6 +6609,10 @@ void MixHandler::ChaosMixUpgradeHolyangelToSoulWeapon(uint8 data)
 			{
 				Weapon = ITEMGET(0, 64);
 			}
+			else if (item->GetItem() == ITEMGET(0, 91))  //MG S16 2-2
+			{
+				Weapon = ITEMGET(0, 92);
+			}
 			else if (item->GetItem() == ITEMGET(2, 27))
 			{
 				Weapon = ITEMGET(2, 36);
@@ -6747,6 +6766,10 @@ void MixHandler::ChaosMixUpgradeSoulToBlueEyeWeapon(uint8 data)
 			else if (item->GetItem() == ITEMGET(0, 64))
 			{
 				Weapon = ITEMGET(0, 80);
+			}
+			else if (item->GetItem() == ITEMGET(0, 92))  //MG S16 2-2
+			{
+				Weapon = ITEMGET(0, 93);
 			}
 			else if (item->GetItem() == ITEMGET(2, 36))
 			{
@@ -6907,6 +6930,10 @@ void MixHandler::ChaosMixUpgradeBlueEyeToSilverHartWeapon(uint8 data)
 			else if (item->GetItem() == ITEMGET(0, 75))
 			{
 				Weapon = ITEMGET(0, 84);
+			}
+			else if (item->GetItem() == ITEMGET(0, 93))  //MG S16 2-2
+			{
+				Weapon = ITEMGET(0, 94);
 			}
 			else if (item->GetItem() == ITEMGET(2, 40))
 			{
@@ -12582,6 +12609,11 @@ void MixHandler::PetTrainerGuardianResurrection(uint8 type, uint8 id, uint8 main
 				if (pMixGuardian->GetResultItem() == ITEMGET(12, 483) && roll_chance_i(sGameServer->GetRareIceDragonRate()))
 				{
 					item.SetItem(ITEMGET(12, 484));
+				}
+				// 3rd Guatdian(Test)
+				else if (pMixGuardian->GetResultItem() == ITEMGET(12, 75) && roll_chance_i(sGameServer->GetRareIceDragonRate()))
+				{
+					item.SetItem(ITEMGET(12, 76));
 				}
 
 				sItemMgr->GenerateGuardianOptions(&item, 2);
