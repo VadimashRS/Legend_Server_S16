@@ -507,7 +507,8 @@ void Player::PartyMove(uint8 * Packet)
 			return;
 		}
 
-		this->MoneyReduce(sGameServer->GetPartyMoveCost());
+		//this->MoneyReduce(sGameServer->GetPartyMoveCost());
+		this->MoneySet(this->MoneyGet() - sGameServer->GetPartyMoveCost());  //Fix PartyMove Cost
 	}
 
 	this->TeleportToLocation(pPlayer->GetWorldId(), pPlayer->GetX(), pPlayer->GetY(), this->GetDirection(), this->GetInstance());
