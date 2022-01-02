@@ -50,7 +50,7 @@ void InitCommon()
 
 	SetCompleteHook(0xE8, MAIN_OFFSET_INIT_WINDOW_HOOK, (DWORD)&InitWindow);
 
-	//SetCompleteHook(0xE9, MAIN_OFFSET_WELCOME_TO_WORLD_HOOK_1, &WelcomeToWorld1);
+	SetCompleteHook(0xE9, MAIN_OFFSET_WELCOME_TO_WORLD_HOOK_1, &WelcomeToWorld1);
 	SetCompleteHook(0xE9, MAIN_OFFSET_WELCOME_TO_WORLD_HOOK_2, &WelcomeToWorld2);
 
 	//SetCompleteHook(0xE9, MAIN_OFFSET_LOAD_TEXTURE_HOOK, &LoadTextureHook);
