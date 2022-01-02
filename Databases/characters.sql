@@ -758,6 +758,12 @@ CREATE TABLE `character_warp_favorite_list`  (
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
+-- Table structure for character_warp_favorite_list --Fix Favorite warp list
+-- ----------------------------
+USE `muonline_characters`; -- change to your schema
+ALTER TABLE `character_warp_favorite_list` DROP PRIMARY KEY;
+
+-- ----------------------------
 -- Table structure for crywolf_data
 -- ----------------------------
 DROP TABLE IF EXISTS `crywolf_data`;
