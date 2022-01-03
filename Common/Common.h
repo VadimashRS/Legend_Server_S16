@@ -1065,20 +1065,20 @@ enum
 	DB_CLASS_MIRAGE_LANCER			= 0x73,
 	DB_CLASS_SHINING_LANCER			= 0x77,
 
-	DB_CLASS_RUNE_WIZARD = 0x80,
-	DB_CLASS_RUNE_SPELL_MASTER = 0x81,
-	DB_CLASS_GRAND_RUNE_MASTER = 0x83,
-	DB_CLASS_MAJESTIC_RUNE_WIZARD = 0x87,
+	DB_CLASS_RUNE_WIZARD 			= 0x80,
+	DB_CLASS_RUNE_SPELL_MASTER 		= 0x81,
+	DB_CLASS_GRAND_RUNE_MASTER 		= 0x83,
+	DB_CLASS_MAJESTIC_RUNE_WIZARD 	= 0x87,
 
-	DB_CLASS_SLAYER = 0x90,
-	DB_CLASS_ROYAL_SLAYER = 0x91,
-	DB_CLASS_MASTER_SLAYER = 0x93,
-	DB_CLASS_SLAUGHTERER = 0x97,
+	DB_CLASS_SLAYER 				= 0x90,
+	DB_CLASS_ROYAL_SLAYER 			= 0x91,
+	DB_CLASS_MASTER_SLAYER 			= 0x93,
+	DB_CLASS_SLAUGHTERER 			= 0x97,
 
-	DB_CLASS_GUNNER_1 = 0xA0,
-	DB_CLASS_GUNNER_2 = 0xA1,
-	DB_CLASS_GUNNER_3 = 0xA3,
-	DB_CLASS_GUNNER_4 = 0xA7,
+	DB_CLASS_GUN_CRUSHER 			= 0xA0,
+	DB_CLASS_GUN_BRAKER				= 0xA1,
+	DB_CLASS_MASTER_GUN_BREAKER		= 0xA3,
+	DB_CLASS_HEIST_GUN_CRUSHER		= 0xA7,
 };
 
 namespace Character
@@ -1101,32 +1101,32 @@ namespace Character
 
 	inline bool Allowed(uint8 race)
 	{
-		return ( race == DB_CLASS_DARK_WIZARD ||
-				 race == DB_CLASS_DARK_KNIGHT ||
-				 race == DB_CLASS_FAIRY_ELF ||
-				 race == DB_CLASS_MAGIC_GLADIATOR ||
-				 race == DB_CLASS_DARK_LORD ||
-				 race == DB_CLASS_SUMMONER ||
-				 race == DB_CLASS_RAGE_FIGHTER ||
-				 race == DB_CLASS_GROW_LANCER ||
-				 race == DB_CLASS_RUNE_WIZARD ||
-				 race == DB_CLASS_SLAYER ||
-				 race == DB_CLASS_GUNNER_1);
+		return ( race == DB_CLASS_DARK_WIZARD 		||
+				 race == DB_CLASS_DARK_KNIGHT 		||
+				 race == DB_CLASS_FAIRY_ELF 		||
+				 race == DB_CLASS_MAGIC_GLADIATOR 	||
+				 race == DB_CLASS_DARK_LORD 		||
+				 race == DB_CLASS_SUMMONER 			||
+				 race == DB_CLASS_RAGE_FIGHTER 		||
+				 race == DB_CLASS_GROW_LANCER 		||
+				 race == DB_CLASS_RUNE_WIZARD 		||
+				 race == DB_CLASS_SLAYER 			||
+				 race == DB_CLASS_GUN_CRUSHER );
 	}
 
 	inline bool AllowedDB(uint8 const race)
 	{
-		return ( race == DB_CLASS_DARK_WIZARD		|| race == DB_CLASS_SOUL_MASTER		|| race == DB_CLASS_GRAND_MASTER || race == DB_CLASS_SOUL_WIZARD ||
-				 race == DB_CLASS_DARK_KNIGHT		|| race == DB_CLASS_BLADE_KNIGHT	|| race == DB_CLASS_BLADE_MASTER || race == DB_CLASS_DRAGON_KNIGHT ||
-				 race == DB_CLASS_FAIRY_ELF			|| race == DB_CLASS_MUSE_ELF		|| race == DB_CLASS_HIGH_ELF || race == DB_CLASS_NOBLE_ELF ||
-				 race == DB_CLASS_MAGIC_GLADIATOR	|| race == DB_CLASS_DUEL_MASTER		|| race == DB_CLASS_MAGIC_KNIGHT ||
-				 race == DB_CLASS_DARK_LORD			|| race == DB_CLASS_LORD_EMPEROR	|| race == DB_CLASS_EMPIRE_LORD ||
-				 race == DB_CLASS_SUMMONER			|| race == DB_CLASS_BLOODY_SUMMONER	|| race == DB_CLASS_DIMENSION_MASTER || race == DB_CLASS_DIMENSIONER ||
-				 race == DB_CLASS_RAGE_FIGHTER		|| race == DB_CLASS_FIST_MASTER		|| race == DB_CLASS_FIST_BLASER ||
-				 race == DB_CLASS_GROW_LANCER		|| race == DB_CLASS_MIRAGE_LANCER	|| race == DB_CLASS_SHINING_LANCER ||
-				 race == DB_CLASS_RUNE_WIZARD || race == DB_CLASS_RUNE_SPELL_MASTER || race == DB_CLASS_GRAND_RUNE_MASTER || race == DB_CLASS_MAJESTIC_RUNE_WIZARD ||
-				 race == DB_CLASS_SLAYER || race == DB_CLASS_ROYAL_SLAYER || race == DB_CLASS_MASTER_SLAYER || race == DB_CLASS_SLAUGHTERER ||
-				 race == DB_CLASS_GUNNER_1 || race == DB_CLASS_GUNNER_2 || race == DB_CLASS_GUNNER_3 || race == DB_CLASS_GUNNER_4);
+		return ( race == DB_CLASS_DARK_WIZARD		|| race == DB_CLASS_SOUL_MASTER			|| race == DB_CLASS_GRAND_MASTER 		|| race == DB_CLASS_SOUL_WIZARD 			||
+				 race == DB_CLASS_DARK_KNIGHT		|| race == DB_CLASS_BLADE_KNIGHT		|| race == DB_CLASS_BLADE_MASTER 		|| race == DB_CLASS_DRAGON_KNIGHT 			||
+				 race == DB_CLASS_FAIRY_ELF			|| race == DB_CLASS_MUSE_ELF			|| race == DB_CLASS_HIGH_ELF 			|| race == DB_CLASS_NOBLE_ELF 				||
+				 race == DB_CLASS_MAGIC_GLADIATOR	|| race == DB_CLASS_DUEL_MASTER			|| race == DB_CLASS_MAGIC_KNIGHT 		||
+				 race == DB_CLASS_DARK_LORD			|| race == DB_CLASS_LORD_EMPEROR		|| race == DB_CLASS_EMPIRE_LORD 		||
+				 race == DB_CLASS_SUMMONER			|| race == DB_CLASS_BLOODY_SUMMONER		|| race == DB_CLASS_DIMENSION_MASTER 	|| race == DB_CLASS_DIMENSIONER 			||
+				 race == DB_CLASS_RAGE_FIGHTER		|| race == DB_CLASS_FIST_MASTER			|| race == DB_CLASS_FIST_BLASER 		||
+				 race == DB_CLASS_GROW_LANCER		|| race == DB_CLASS_MIRAGE_LANCER		|| race == DB_CLASS_SHINING_LANCER 		||
+				 race == DB_CLASS_RUNE_WIZARD 		|| race == DB_CLASS_RUNE_SPELL_MASTER 	|| race == DB_CLASS_GRAND_RUNE_MASTER 	|| race == DB_CLASS_MAJESTIC_RUNE_WIZARD 	||
+				 race == DB_CLASS_SLAYER 			|| race == DB_CLASS_ROYAL_SLAYER 		|| race == DB_CLASS_MASTER_SLAYER 		|| race == DB_CLASS_SLAUGHTERER 			||
+				 race == DB_CLASS_GUN_CRUSHER 		|| race == DB_CLASS_GUN_BRAKER 			|| race == DB_CLASS_MASTER_GUN_BREAKER 	|| race == DB_CLASS_HEIST_GUN_CRUSHER);
 	}
 }
 
@@ -1157,7 +1157,7 @@ static uint8 CharacterToDB[Character::MAX_CLASS] =
 	DB_CLASS_GROW_LANCER,
 	DB_CLASS_RUNE_WIZARD,
 	DB_CLASS_SLAYER,
-	DB_CLASS_GUNNER_1,
+	DB_CLASS_GUN_CRUSHER,
 };
 
 enum
