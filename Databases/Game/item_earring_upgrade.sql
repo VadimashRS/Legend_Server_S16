@@ -11,7 +11,7 @@
  Target Server Version : 80023
  File Encoding         : 65001
 
- Date: 19/04/2021 20:30:30
+ Date: 04/01/2022 19:20:06
 */
 
 SET NAMES utf8mb4;
@@ -48,14 +48,14 @@ INSERT INTO `item_earring_upgrade` VALUES (3, 600000, 13, 510, 2, 0, 0, 0, 0, 0,
 INSERT INTO `item_earring_upgrade` VALUES (4, 600000, 13, 510, 3, 0, 0, 0, 0, 0, 0, 3000000);
 INSERT INTO `item_earring_upgrade` VALUES (5, 600000, 13, 510, 3, 0, 0, 0, 0, 0, 0, 3500000);
 INSERT INTO `item_earring_upgrade` VALUES (6, 600000, 13, 510, 4, 0, 0, 0, 0, 0, 0, 4000000);
-INSERT INTO `item_earring_upgrade` VALUES (7, 800000, 13, 510, 4, 0, 0, 0, 0, 0, 0, 4500000);
-INSERT INTO `item_earring_upgrade` VALUES (8, 800000, 13, 510, 4, 0, 0, 0, 0, 0, 0, 5000000);
-INSERT INTO `item_earring_upgrade` VALUES (9, 800000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 5500000);
-INSERT INTO `item_earring_upgrade` VALUES (10, 800000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 6000000);
-INSERT INTO `item_earring_upgrade` VALUES (11, 800000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 6500000);
-INSERT INTO `item_earring_upgrade` VALUES (12, 800000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 7000000);
-INSERT INTO `item_earring_upgrade` VALUES (13, 800000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 7500000);
-INSERT INTO `item_earring_upgrade` VALUES (14, 800000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 8000000);
+INSERT INTO `item_earring_upgrade` VALUES (7, 600000, 13, 510, 4, 0, 0, 0, 0, 0, 0, 4500000);
+INSERT INTO `item_earring_upgrade` VALUES (8, 600000, 13, 510, 4, 0, 0, 0, 0, 0, 0, 5000000);
+INSERT INTO `item_earring_upgrade` VALUES (9, 600000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 5500000);
+INSERT INTO `item_earring_upgrade` VALUES (10, 600000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 6000000);
+INSERT INTO `item_earring_upgrade` VALUES (11, 600000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 6500000);
+INSERT INTO `item_earring_upgrade` VALUES (12, 600000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 7000000);
+INSERT INTO `item_earring_upgrade` VALUES (13, 600000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 7500000);
+INSERT INTO `item_earring_upgrade` VALUES (14, 600000, 13, 510, 5, 0, 0, 0, 0, 0, 0, 8000000);
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
